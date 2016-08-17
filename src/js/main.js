@@ -9,5 +9,6 @@ console.log('js works')
 $('.carousel').slick({
   dots: true,
   pauseOnFocus: false,
-  pauseOnHover: false
+  pauseOnHover: false,
+  arrows: false
 });

@@ -34,9 +34,27 @@
 }
 
 .ultra-purified {
-  max-width: 800px;
-  margin: 0 auto;
+
   padding-top: 60px;
+  position: relative;
+
+  .bottle {
+    position: absolute;
+    width: 31%;
+    img {
+      width: 100%;
+    }
+  }
+
+  .left-bottle {
+    top: 90px;
+    left: -110px%;
+  }
+
+  .right-bottle {
+    top: -20px;
+    right: -140px;
+  }
 
   .purified-copy {
     text-align: center;
@@ -50,11 +68,40 @@
     background: #F7F8F9;
     color: #5d0e8b;
     padding: 30px 40px;
+    max-width: 800px;
+    margin: 0 auto;
   }
 
   .purified-fine {
     text-align: center;
     color: gray;
     margin-top: 30px;
+  }
+}
+
+.clouds {
+  background-image: url('../img/clouds.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 270px;
+
+  .info {
+    display: inline-block;
+    width: 33%;
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
+    .clouds-heading {
+      font-size: 18px;
+    }
+
+    .text {
+      width: 200px;
+      margin: 0 auto;
+    }
   }
 }

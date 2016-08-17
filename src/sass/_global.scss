@@ -14,14 +14,16 @@
 
 body {
   background-color: white;
+  overflow-x: hidden;
 }
 
 .row {
   max-width: 100%;
+  margin-bottom: 50px;
 }
 
 .content-wrapper {
   padding-top: 72px;
-  max-width: 1020px;
+  // max-width: 1020px;
   margin: 0 auto;
 }
