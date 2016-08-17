@@ -18,6 +18,11 @@ body {
 }
 
 .row {
-  width: 1440px;
   max-width: 100%;
+}
+
+.content-wrapper {
+  padding-top: 72px;
+  max-width: 1020px;
+  margin: 0 auto;
 }

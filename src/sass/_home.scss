@@ -19,5 +19,11 @@
 // }
 
 .carousel {
-  background-image: url(../img/tulum.jpg);
+  // background-image: url(../img/tulum.jpg);
+
+  .image {
+    img {
+      width: 100%;
+    }
+  }
 }
