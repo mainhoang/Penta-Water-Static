@@ -112,8 +112,6 @@
 }
 
 .naturally-balanced {
-  max-width: 600px;
-  margin: 0 auto;
 
   h2 {
     text-align: center;
@@ -124,6 +122,18 @@
   .balanced-text {
     font-family: 'CircularBook';
     color: gray;
+    max-width: 600px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+  }
+
+  .ph-scale {
+    max-width: 900px;
+    margin: 0 auto;
+
+    img {
+      width: 100%;
+    }
   }
 }
 
@@ -216,6 +226,7 @@
       width: 13.7%;
       img {
         width: 75%;
+        border: 1px solid black;
       }
     }
   }
