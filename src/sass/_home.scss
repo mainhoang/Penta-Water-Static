@@ -1,19 +1,203 @@
-// _page.scss is in refrence to a specific page
-//************************
-// .class {
-//   // <div class="class">
-//   rule:value;
-//   .sub-class {
-//     rule:value;
-//     // <div class="class">
-//     //   <div class="sub-class"> . . .
-//     &.additional-class {
-//       rule:value;
-//       // <div class="sub-class additional-class"> . . .
-//     }
-//     &:psuedo-selector {
-//       rule:value;
-//       // hover, nth-child(1), etc...
-//     }
-//   }
-// }
+.carousel {
+  .image {
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.heading {
+  font-size: 40px;
+  color: $purple;
+  text-align: center;
+  padding-bottom: 30px;
+  font-family: 'CircularBold';
+}
+
+.ultra-purified {
+
+  padding-top: 60px;
+  position: relative;
+
+  .bottle {
+    position: absolute;
+    width: 31%;
+    img {
+      width: 100%;
+    }
+  }
+
+  .left-bottle {
+    top: -10px;
+    left: -110px;
+  }
+
+  .right-bottle {
+    top: -20px;
+    right: -140px;
+  }
+
+  .heading-text {
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .purified-copy {
+    text-align: center;
+    color: gray;
+    padding-bottom: 30px;
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: 'CircularBook';
+  }
+
+  .purified-ingredients {
+    background: #F7F8F9;
+    color: $purple;
+    padding: 30px 40px;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: 'CircularBook';
+  }
+
+  .purified-fine {
+    text-align: center;
+    color: gray;
+    margin-top: 30px;
+    font-family: 'CircularBook';
+  }
+}
+
+.clouds {
+  background-image: url('../img/clouds.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 270px;
+
+  .image {
+    background-image: url('../img/patent-process-icon.png');
+    height: 50px;
+    width: 50px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0 auto;
+
+  }
+
+  .info {
+    display: inline-block;
+    width: 33%;
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
+    .clouds-heading {
+      font-size: 22px;
+      font-family: 'CircularBook';
+      padding-bottom: 20px;
+    }
+
+    .text {
+      width: 200px;
+      margin: 0 auto;
+      font-family: 'CircularBook';
+      font-size: 12px;
+    }
+  }
+}
+
+.naturally-balanced {
+  max-width: 600px;
+  margin: 0 auto;
+
+  h2 {
+    text-align: center;
+    color: #5d0e8b;
+    font-family: 'CircularBold';
+  }
+
+  .balanced-text {
+    font-family: 'CircularBook';
+    color: gray;
+  }
+}
+
+.penta-delivered {
+  background-image: url('../img/penta-delivered-cropped.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 548px;
+
+  .purple-box {
+    background: $purple;
+    max-width: 800px;
+    margin: 0 auto;
+    border: 5px solid white;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    padding: 50px 0;
+
+    .heading {
+      color: white;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+      font-family: 'CircularBook';
+    }
+
+    p {
+      font-family: 'CircularBold';
+    }
+
+    .buttons {
+      border: 3px solid white;
+      width: 50%;
+      margin: 30px auto 50px;
+
+      a {
+        display: inline-block;
+        width: 49.4%;
+        transition: all 250ms;
+
+        .link-box {
+          padding: 10px 0;
+        }
+
+        &:hover {
+          background: white;
+          color: $purple;
+        }
+      }
+    }
+  }
+}
+
+.live-pure {
+  color: $purple;
+  text-align: center;
+  font-family: 'CircularBook';
+  font-size: 20px;
+
+  .instagram {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding-top: 40px;
+    .image {
+      display: inline-block;
+      width: 16.2%;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
