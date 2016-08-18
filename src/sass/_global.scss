@@ -9,15 +9,20 @@
 * {
   box-sizing: border-box;
   position: relative;
-  outline: 1px solid red;
 }
 
 body {
   background-color: white;
-  display: inline-block;
+  overflow-x: hidden;
 }
 
 .row {
-  width: 1440px;
   max-width: 100%;
+  margin-bottom: 50px;
+}
+
+.content-wrapper {
+  padding-top: 72px;
+  // max-width: 1020px;
+  margin: 0 auto;
 }
