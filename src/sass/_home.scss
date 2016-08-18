@@ -51,6 +51,12 @@
     max-width: 600px;
     margin: 0 auto;
     font-family: 'CircularBook';
+    line-height: 1.5em;
+
+    @media (max-width: $mobile) {
+      padding-left: 5%;
+      padding-right: 5%;
+    }
   }
 
   .purified-ingredients {
@@ -60,6 +66,7 @@
     max-width: 800px;
     margin: 0 auto;
     font-family: 'CircularBook';
+    line-height: 1.5em;
   }
 
   .purified-fine {
@@ -67,6 +74,12 @@
     color: gray;
     margin-top: 30px;
     font-family: 'CircularBook';
+
+    @media (max-width: $mobile) {
+      padding-left: 5%;
+      padding-right: 5%;
+      font-size: 14px;
+    }
   }
 }
 
@@ -76,6 +89,12 @@
   background-size: cover;
   background-position: center center;
   height: 270px;
+
+  @media (max-width: $mobile) {
+    height: auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 
   .image {
     background-image: url('../img/patent-process-icon.png');
@@ -95,6 +114,14 @@
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+
+    @media (max-width: $mobile) {
+      width: 100%;
+      position: static;
+      top: 0;
+      transform: none;
+      margin-bottom: 40px;
+    }
 
     .clouds-heading {
       font-size: 22px;
@@ -125,6 +152,12 @@
     max-width: 600px;
     margin: 0 auto;
     padding-bottom: 30px;
+    line-height: 1.5em;
+
+    @media (max-width: $mobile) {
+      padding-left: 5%;
+      padding-right: 5%;
+    }
   }
 
   .ph-scale {
@@ -167,6 +200,12 @@
 
     p {
       font-family: 'CircularBold';
+      color: white;
+      opacity: .5;
+      margin: 0 auto;
+      font-size: 12px;
+      max-width: 600px;
+      margin-bottom: 10px;
     }
 
     .buttons {
@@ -178,6 +217,10 @@
         display: inline-block;
         width: 49.4%;
         transition: all 250ms;
+
+        @media (max-width: $mobile) {
+          width: 100%;
+        }
 
         .link-box {
           padding: 10px 0;
@@ -205,6 +248,10 @@
     .image {
       display: inline-block;
       width: 16.1%;
+
+      @media (max-width: $mobile) {
+        width: 25%;
+      }
       img {
         width: 100%;
       }
