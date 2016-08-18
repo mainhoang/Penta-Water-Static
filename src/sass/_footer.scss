@@ -1,3 +1,91 @@
 footer {
+  background: $purple;
+
+  .footer-container {
+    max-width: 1220px;
+    margin: 0 auto;
+    color: white;
+    font-family: 'CircularBook';
+    padding-top: 30px;
+    padding-bottom: 100px;
+
+    .footer-left, .footer-right {
+      width: 49.8%;
+      display: inline-block;
+    }
+
+    .footer-left {
+      vertical-align: top;
+      border: 1px solid white;
+      .footer-outer {
+        display: inline-block;
+        font-size: 10px;
+        vertical-align: top;
+
+        .footer-inner {
+          list-style-type: none;
+          li {
+            line-height: 2em;
+
+            img {
+              padding-right: 5px;
+            }
+          }
+          li.footer-logo {
+            font-size: 26px;
+            line-height: 1em;
+          }
+
+          li.footer-heading {
+            font-weight: bold;
+            font-size: 15px;
+          }
+
+          a {
+            padding: 0;
+          }
+
+          .social-name {
+            display: inline-block;
+            vertical-align: top;
+          }
+        }
+      }
+    }
+
+    .footer-right {
+      text-align: right;
+
+      .footer-right-inner {
+        display: inline-block;
+
+        .signup {
+          border-bottom: 1px solid white;
+
+          input {
+            width: 100%;
+            background: $purple;
+            border: 0;
+            outline: none;
+            color: white;
+
+            &::-webkit-input-placeholder {
+                color: #fff;
+              }
+            &:-moz-placeholder { /* Firefox 18- */
+              color: #fff;
+            }
+            &::-moz-placeholder {  /* Firefox 19+ */
+              color: #fff;
+            }
+            &:-ms-input-placeholder {
+              color: #fff;
+            }
+          }
+        }
+
+      }
+    }
+  }
 
 }
