@@ -48,7 +48,7 @@
     text-align: center;
     color: gray;
     padding-bottom: 30px;
-    max-width: 600px;
+    max-width: 710px;
     margin: 0 auto;
     font-family: 'CircularBook';
     line-height: 1.5em;
@@ -149,10 +149,11 @@
   .balanced-text {
     font-family: 'CircularBook';
     color: gray;
-    max-width: 600px;
+    max-width: 820px;
     margin: 0 auto;
     padding-bottom: 30px;
     line-height: 1.5em;
+    text-align: center;
 
     @media (max-width: $mobile) {
       padding-left: 5%;
@@ -179,7 +180,7 @@
 
   .purple-box {
     background: $purple;
-    max-width: 800px;
+    max-width: 910px;
     margin: 0 auto;
     border: 5px solid white;
     position: relative;
