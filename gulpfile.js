@@ -25,7 +25,7 @@ gulp.task('liquify', () => {
 })
 gulp.task('move', function(){
   gulp.src('src/js/*.js').pipe(gulp.dest('dist/js'))
-  gulp.src('src/sass/fonts/**').pipe(gulp.dest('dist/css/fonts'))
+  gulp.src('src/sass/fonts').pipe(gulp.dest('dist/css/fonts'))
   gulp.src('src/img/**').pipe(gulp.dest('dist/img'))
 })
 gulp.task('sass', function() {
