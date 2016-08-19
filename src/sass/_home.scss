@@ -74,6 +74,7 @@
     color: gray;
     margin-top: 30px;
     font-family: 'CircularBook';
+    font-size: 10px;
 
     @media (max-width: $mobile) {
       padding-left: 5%;
@@ -268,13 +269,13 @@
     text-align: center;
     .store {
       display: inline-block;
+      padding: 5px 0;
       // position: relative;
       // top: 50%;
       // transform: translateY(-50%);
-      width: 13.7%;
+      // width: 13.7%;
       img {
         width: 75%;
-        border: 1px solid black;
       }
     }
   }
