@@ -13,6 +13,11 @@
     font-family: 'CircularBold';
     margin: 0 auto;
     max-width: 720px;
+
+    @media (max-width: $mobile) {
+      padding-left: 5%;
+      padding-right: 5%;
+    }
   }
 
   .info-container {

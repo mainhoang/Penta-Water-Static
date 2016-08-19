@@ -58,5 +58,10 @@ body {
     font-family: $circularbook;
     font-weight: bold;
     padding: 0;
+
+    @media (max-width: $mobile) {
+      width: 100%;
+      display: inline-block;
+    }
   }
 }
