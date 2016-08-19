@@ -1,32 +1,85 @@
-.heading {
-  font-size: 40px;
-  color: $purple;
-  text-align: center;
-  padding-bottom: 30px;
-  font-family: 'CircularBold';
-}
+.why {
 
-.naturally-balanced {
-
-  h2 {
+  .hero-image {
+    img {
+      width: 100%;
+    }
+  }
+  .heading {
+    font-size: 40px;
+    color: $purple;
     text-align: center;
-    color: #5d0e8b;
+    padding-bottom: 30px;
     font-family: 'CircularBold';
   }
 
-  .balanced-text {
-    font-family: 'CircularBook';
-    color: gray;
-    max-width: 820px;
+  .sub-menu {
+    background: #F8F8F8;
+  }
+
+  .sub-menu-container {
+    max-width: 600px;
     margin: 0 auto;
-    padding-bottom: 30px;
-    line-height: 1.5em;
     text-align: center;
 
-    @media (max-width: $mobile) {
-      padding-left: 5%;
-      padding-right: 5%;
+    .sub-menu-link {
+      display: inline-block;
+      padding: 20px 0;
+      width: 110px;
+      border-bottom: 3px solid #f8f8f8;
+      transition: border-color 250ms;
+
+      &:hover {
+        border-bottom: 3px solid $purple;
+      }
+
+    }
+
+    a {
+      color: $purple;
+      font-family: $circularbook;
+      font-weight: bold;
+      padding: 0;
     }
   }
 
+  .info-container {
+    margin-top: 100px;
+
+    h2 {
+      text-align: center;
+      color: #5d0e8b;
+      font-family: 'CircularBold';
+    }
+
+    .text {
+      font-family: $circularbook;
+      color: gray;
+      max-width: 820px;
+      margin: 0 auto;
+      padding-bottom: 80px;
+      line-height: 1.5em;
+      text-align: center;
+      border-bottom: 1px solid gray;
+
+      @media (max-width: $mobile) {
+        padding-left: 5%;
+        padding-right: 5%;
+      }
+
+      p {
+        padding-bottom: 50px;
+      }
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .bottom-image {
+    img {
+      width: 100%;
+    }
+  }
 }
