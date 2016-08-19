@@ -1,4 +1,4 @@
-.why {
+.why, .faq {
 
   .hero-image {
     img {
@@ -11,38 +11,8 @@
     text-align: center;
     padding-bottom: 30px;
     font-family: 'CircularBold';
-  }
-
-  .sub-menu {
-    background: #F8F8F8;
-  }
-
-  .sub-menu-container {
-    max-width: 600px;
     margin: 0 auto;
-    text-align: center;
-
-    .sub-menu-link {
-      display: inline-block;
-      padding: 20px 0;
-      width: 110px;
-      border-bottom: 3px solid #f8f8f8;
-      transition: all 250ms;
-      color: gray;
-
-      &:hover {
-        border-bottom: 3px solid $purple;
-        color: $purple;
-      }
-
-    }
-
-    a {
-      color: $purple;
-      font-family: $circularbook;
-      font-weight: bold;
-      padding: 0;
-    }
+    max-width: 720px;
   }
 
   .info-container {
