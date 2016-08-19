@@ -27,10 +27,12 @@
       padding: 20px 0;
       width: 110px;
       border-bottom: 3px solid #f8f8f8;
-      transition: border-color 250ms;
+      transition: all 250ms;
+      color: gray;
 
       &:hover {
         border-bottom: 3px solid $purple;
+        color: $purple;
       }
 
     }
