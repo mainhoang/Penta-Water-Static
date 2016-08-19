@@ -109,7 +109,7 @@
 
   .info {
     display: inline-block;
-    width: 33%;
+    width: 32.9%;
     color: white;
     text-align: center;
     position: relative;
@@ -135,6 +135,7 @@
       margin: 0 auto;
       font-family: 'CircularBook';
       font-size: 12px;
+      line-height: 1.5em;
     }
   }
 }
@@ -256,26 +257,6 @@
       }
       img {
         width: 100%;
-      }
-    }
-  }
-}
-
-.distributors {
-  background: #F3F3F3;
-  .stores-container {
-    max-width: 1220px;
-    margin: 0 auto;
-    text-align: center;
-    .store {
-      display: inline-block;
-      padding: 5px 0;
-      // position: relative;
-      // top: 50%;
-      // transform: translateY(-50%);
-      // width: 13.7%;
-      img {
-        width: 75%;
       }
     }
   }

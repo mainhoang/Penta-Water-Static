@@ -1,0 +1,32 @@
+.heading {
+  font-size: 40px;
+  color: $purple;
+  text-align: center;
+  padding-bottom: 30px;
+  font-family: 'CircularBold';
+}
+
+.naturally-balanced {
+
+  h2 {
+    text-align: center;
+    color: #5d0e8b;
+    font-family: 'CircularBold';
+  }
+
+  .balanced-text {
+    font-family: 'CircularBook';
+    color: gray;
+    max-width: 820px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    line-height: 1.5em;
+    text-align: center;
+
+    @media (max-width: $mobile) {
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+  }
+
+}
