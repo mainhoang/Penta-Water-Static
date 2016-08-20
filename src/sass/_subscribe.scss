@@ -1,0 +1,121 @@
+.subscribe {
+
+  .hero-image {
+    background-image: url('../img/subscribe.jpg');
+    height: 660px;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 30px;
+
+    @media (max-width: 1250px) {
+      background-size: initial;
+    }
+
+    .subscribe-container {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      padding: 50px 130px;
+      font-family: $circularbook;
+      max-width: 780px;
+      margin: 0 auto;
+
+      @media (max-width: $mobile) {
+        padding: 50px 40px;
+      }
+
+      .subscribe {
+        text-align: center;
+        color: white;
+
+        .text {
+          margin-bottom: 20px;
+          font-size: 60px;
+          font-weight: bold;
+        }
+
+        .info {
+          margin-bottom: 35px;
+          font-size: 14px;
+          line-height: 1.5em;
+        }
+
+        a {
+          background: $purple;
+          padding: 8px 40px;
+          font-size: 14px;
+          transition: all 250ms;
+
+          &:hover {
+            background: white;
+            color: $purple;
+          }
+        }
+      }
+    }
+  }
+
+  .whitebox-container {
+    max-width: 800px;
+    margin: 0 auto;
+    border: 1px solid gray;
+    position: relative;
+    bottom: 80px;
+    background: white;
+
+    @media (max-width: $mobile) {
+      max-width: 80%;
+    }
+
+    .whitebox-inner {
+      padding: 40px 0;
+
+      .half {
+        width: 49.7%;
+        display: inline-block;
+        text-align: center;
+
+        @media (max-width: $mobile) {
+          width: 100%;
+        }
+
+        &.sampler {
+          border-right: 1px solid gray;
+
+          @media (max-width: $mobile) {
+            margin-bottom: 40px;
+            border-right: 0;
+          }
+        }
+
+        .bottles {
+          width: 30px;
+          display: inline-block;
+
+          img {
+            width: 100%;
+          }
+        }
+
+        .text {
+          width: 310px;
+          display: inline-block;
+
+          font-family: $circularbook;
+          .heading {
+            font-size: 18px;
+            padding-bottom: 10px;
+          }
+
+          .about {
+            color: gray;
+            font-size: 12px;
+            line-height: 1.5em;
+            padding: 0 20px;
+          }
+        }
+      }
+    }
+  }
+}
