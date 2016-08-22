@@ -1,7 +1,12 @@
 footer {
+  * {
+    outline: 1px dotted cyan;
+  }
   background: $purple;
 
   .footer-container {
+    position: relative;
+    height:300px;
     max-width: 1220px;
     margin: 0 auto;
     color: white;
@@ -10,8 +15,9 @@ footer {
     padding-bottom: 100px;
 
     .footer-left, .footer-right {
-      width: 49.8%;
+      // width: 49.8%;
       display: inline-block;
+      position: absolute;
     }
 
     .footer-mobile-signup {
@@ -23,7 +29,24 @@ footer {
     }
 
     .footer-left {
+      left:0;
       vertical-align: top;
+      ul {
+        li.footer-outer {
+          &:nth-child(1) {
+            width:244px;
+          }
+          &:nth-child(2) {
+            width:172px;
+          }
+          &:nth-child(3) {
+            width:154px;
+          }
+          &:nth-child(4) {
+            width:100px;
+          }
+        }
+      }
 
       @media (max-width: $mobile) {
         width: 100%;
@@ -47,7 +70,7 @@ footer {
           @media (max-width: $mobile) {
             display: block;
           }
-          
+
         }
 
         @media (max-width: $mobile) {
@@ -98,6 +121,7 @@ footer {
     }
 
     .footer-right {
+      right:0;
       @media (max-width: $mobile) {
         display: none;
       }
