@@ -1,0 +1,27 @@
+.distributors {
+  background: #F3F3F3;
+  .stores-container {
+    max-width: 1220px;
+    margin: 0 auto;
+    text-align: center;
+    .store {
+      display: inline-block;
+      padding: 5px 0;
+      // position: relative;
+      // top: 50%;
+      // transform: translateY(-50%);
+      // width: 13.7%;
+      img {
+        width: 75%;
+      }
+    }
+  }
+}
+
+.proudly-sold-in {
+  color: #f3f3f3;
+  text-align: center;
+  font-family: $circularbook;
+  padding-top: 60px;
+  padding-bottom: 20px;
+}

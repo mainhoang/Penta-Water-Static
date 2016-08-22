@@ -1,0 +1,62 @@
+.why, .faq {
+
+  .hero-image {
+    img {
+      width: 100%;
+    }
+  }
+  .heading {
+    font-size: 40px;
+    color: $purple;
+    text-align: center;
+    padding-bottom: 30px;
+    font-family: 'CircularBold';
+    margin: 0 auto;
+    max-width: 720px;
+
+    @media (max-width: $mobile) {
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+  }
+
+  .info-container {
+    margin-top: 100px;
+
+    h2 {
+      text-align: center;
+      color: #5d0e8b;
+      font-family: 'CircularBold';
+    }
+
+    .text {
+      font-family: $circularbook;
+      color: gray;
+      max-width: 820px;
+      margin: 0 auto;
+      padding-bottom: 80px;
+      line-height: 1.5em;
+      text-align: center;
+      border-bottom: 1px solid gray;
+
+      @media (max-width: $mobile) {
+        padding-left: 5%;
+        padding-right: 5%;
+      }
+
+      p {
+        padding-bottom: 50px;
+      }
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .bottom-image {
+    img {
+      width: 100%;
+    }
+  }
+}

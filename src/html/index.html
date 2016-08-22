@@ -8,7 +8,7 @@
   <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css"/>
 </head>
 <body>
-  <div class="content-wrapper">
+  <div class="content-wrapper index">
     {% include 'header' %}
 
     <section class="row">
@@ -42,7 +42,7 @@
           Sourced from a natural mountain aquifer deep within Southern California's high desert, Penta utilizes a patented 13-step reverse osmosis purification process to remove more impurities than any other bottled water for perfectly pure hydration and taste.
         </div>
         <div class="purified-ingredients">
-          Penta water is <strong>arsenic-free</strong>, <strong>chlorine-free</strong>, <strong>chromium 6-free</strong>, <strong>fluoride-free</strong>, <strong>MTBE-free</strong>, <strong>pharmaceutical-free</strong> and <strong>BPA/BPS-free</strong> with typical dissolved solids of less than <strong>one part per million</strong>.
+          Penta water is <strong><u>arsenic-free</u></strong>, <strong><u>chlorine-free</u></strong>, <strong><u>chromium 6-free</u></strong>, <strong><u>fluoride-free</u></strong>, <strong><u>MTBE-free</u></strong>, <strong><u>pharmaceutical-free</u></strong> and <strong><u>BPA/BPS-free</u></strong> with typical dissolved solids of less than <strong><u>one part per million</u></strong>.
         </div>
         <div class="purified-fine">
           family-owned company | bottled with solar energy
@@ -52,21 +52,21 @@
     <section class="row">
       <div class="content clouds">
         <div class="info">
-          <div class="image"></div>
+          <div class="image" id="patented-process"></div>
           <div class="clouds-heading">patented process</div>
           <div class="text">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
           </div>
         </div>
         <div class="info">
-          <div class="image"></div>
+          <div class="image" id="natural-ph"></div>
           <div class="clouds-heading">natural pH</div>
           <div class="text">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
           </div>
         </div>
         <div class="info">
-          <div class="image"></div>
+          <div class="image" id="no-additives"></div>
           <div class="clouds-heading">no additives</div>
           <div class="text">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
@@ -82,6 +82,10 @@
         </div>
         <div class="balanced-text">
           The optimal pH range for our bodies is between 7.35 and 7.45. Only when our body's pH level is within this range can we effectively assimilate the vitamins, minerals, and food supplements we need to survive. More and more health conscious consumers are becoming aware of the harmful effects of an acidic diet and are seeking solutions to bring their body fluids within an acceptable range.
+        </div>
+
+        <div class="ph-scale">
+          <img src="img/ph-scale.jpg" />
         </div>
       </div>
     </section>
@@ -119,7 +123,7 @@
     </section>
     <section class="row">
       <div class="content live-pure">
-        how do you #livepure?
+        how do you <strong>#livepure?</strong>
         <div class="instagram">
           <div class="image">
             <img src="../img/hash-1.jpg" />
@@ -160,10 +164,9 @@
         </div>
       </div>
     </section>
-    <section class="row">
-      <div class="content distributors">
-      </div>
-    </section>
+  
+    {% include 'stores' %}  
+    {% include 'footer' %}
   </div>
 
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>

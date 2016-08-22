@@ -1,0 +1,117 @@
+.clouds {
+  background-image: url('../img/clouds.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 270px;
+
+  @media (max-width: $mobile) {
+    height: auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .image {
+    height: 50px;
+    width: 50px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0 auto;
+
+    &#patented-process {
+      background-image: url('../img/patent-process-icon.png');
+    }
+
+    &#natural-ph {
+      background-image: url('../img/natural-ph-icon.png');
+    }
+
+    &#no-additives {
+      background-image: url('../img/no-additives-icon.png');
+    }
+  }
+
+  .info {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+
+    @media (max-width: $mobile) {
+      width: 100%;
+      position: static;
+      top: 0;
+      transform: none;
+      margin-bottom: 40px;
+    }
+
+    .clouds-heading {
+      font-size: 22px;
+      font-family: $circularbook;
+      padding-bottom: 20px;
+    }
+
+    .text {
+      width: 200px;
+      margin: 0 auto;
+      font-family: $circularbook;
+      font-size: 12px;
+      line-height: 1.5em;
+    }
+  }
+}
+
+
+.index {
+  .clouds {
+    .info {
+      width: 32.9%;
+      
+      .image {
+        &#patented-process {
+          background-image: url('../img/patent-process-icon.png');
+        }
+
+        &#natural-ph {
+          background-image: url('../img/natural-ph-icon.png');
+        }
+
+        &#no-additives {
+          background-image: url('../img/no-additives-icon.png');
+        }
+      }
+    }
+  }
+}
+
+.why {
+  .clouds {
+    .info {
+      width: 19%;
+
+      .image {
+        &#micron-filtration {
+          background-image: url('../img/micron.png');
+        }
+
+        &#reverse-osmosis {
+          background-image: url('../img/reverse.png');
+        }
+
+        &#deionization {
+          background-image: url('../img/deionization.png');
+        }
+
+        &#ultraviolet-light {
+          background-image: url('../img/ultraviolet.png');
+        }
+
+        &#ozonation {
+          background-image: url('../img/ozonation.png');
+        }
+      }
+    }
+  }
+}

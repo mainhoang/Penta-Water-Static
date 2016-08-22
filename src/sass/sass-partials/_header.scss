@@ -5,21 +5,20 @@ header {
   z-index: 6;
   height:72px;
   width: 100%;
-  font-family: "Circular-Bold";
   color: white;
   background-color: $purple;
+  
   @media only screen and (max-width: 600px) {
     height: 100px;
   }
 }
+
 a {
   color: white;
   padding: 10px 15px;
   text-decoration: none;
 }
-a:hover {
-  border: 1px solid white;
-}
+
 
 nav {
   margin: 0 auto;
@@ -30,35 +29,66 @@ nav {
   max-width: 100%;
   height: 100%;
   vertical-align: top;
+  position: relative;
   div.nav-logo {
     display: block;
     width: 10%;
     height: 50px;
-    float: left;
+    position: absolute;
     background-image: url("../img/nav-logo.png");
     background-repeat: no-repeat;
     margin: 13px 20px;
   }
+
   ul.center-links {
+    font-family: "CircularBook";
     display: inline-block;
-    width: 60%;
     text-align: center;
     vertical-align: top;
     margin-top: 25px;
+
+    a {
+      transition: border-color 250ms;
+      border: 1px solid $purple;
+
+      &:hover {
+        border: 1px solid white;
+      }
+    }
     li.navlink {
-      width: 20%;
-      float: right;
+      display: inline-block;
     }
   }
+
   ul.right-links {
+    font-family: "CircularBook";
+    font-size: 16px;
     display: inline-block;
-    width: 25%;
-    background-color: green;
     text-align: right;
-    vertical-align: top;
-    float: right;
-    li.navlink {
-      float: right;
+    position: absolute;
+    right: 0;
+    margin-top: 25px;
+
+    .free-shipping {
+      padding: 10px 0;
+      position: relative;
+      top: 50%;
+      transform: translateY(-24%);
+      border-right: 1px solid white;
+      padding-right: 20px;
+      display: inline-block;
     }
+
+    .cart {
+      background-image: url('../img/basket-icon.png');
+      height: 25px;
+      width: 25px;
+      display: inline-block;
+      background-size: contain;
+      background-repeat: no-repeat;
+      margin-left: 20px;
+
+    }
+    
   }
 }
