@@ -13,6 +13,13 @@ $('.carousel').slick({
   arrows: false
 });
 
+$('.journal-post').readmore({
+    speed: 500,
+    collapsedHeight: 300,
+    moreLink: '<a href="#">See more</a>',
+    lessLink: '<a href="#">See less</a>'
+  });
+
 var burger = document.querySelector('.hamburger-menu')
 var bar = document.querySelector('.bar')
 var dropin = document.querySelector('.dropin')
