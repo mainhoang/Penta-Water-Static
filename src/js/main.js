@@ -13,11 +13,11 @@ $('.carousel').slick({
   arrows: false
 });
 
-$('.journal-post').readmore({
+$('.about-text').readmore({
     speed: 500,
-    collapsedHeight: 300,
-    moreLink: '<a href="#">See more</a>',
-    lessLink: '<a href="#">See less</a>'
+    collapsedHeight: 43,
+    moreLink: '<a href="#">more</a>',
+    lessLink: '<a href="#">less</a>'
   });
 
 var burger = document.querySelector('.hamburger-menu')

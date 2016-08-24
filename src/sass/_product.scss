@@ -1,0 +1,216 @@
+.product {
+  .product-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 100px;
+    .column {
+      width: 32.4%;
+      display: inline-block;
+      font-family: $circularbook;
+      vertical-align: top;
+
+      .watermark {
+        text-align: left;
+        img {
+          display: block;
+        }
+      }
+
+      a {
+        color: $gray;
+      }
+
+      a[data-readmore-toggle] {
+        color: $purple;
+        font-size: 13px;
+        padding: 15px 0;
+      }
+
+      .product-info {
+        text-align: left;
+        width: 280px;
+        h1 {
+          color: $purple;
+          font-size: 40px;
+          padding-bottom: 20px;
+        }
+
+        .about-text {
+          color: $gray;
+          font-size: 14px;
+        }
+      }
+
+      .product-image {
+        width: 50%;
+        margin: 0 auto;
+        img {
+          width: 140px;
+        }
+      }
+
+      .buy-outer {
+        text-align: left;
+        border: 2px solid $gray;
+
+        .buy-inner {
+          padding: 25px 25px 0 25px;
+
+          .name {
+            color: $purple;
+          }
+
+          .dropdowns {
+            select {
+              display: block;
+              border: 0;
+              margin: 20px 0;
+              background: #F4F5F6;
+              height: 40px;
+              width: 100%;
+              color: $purple;
+              font-weight: bold;
+
+              &.volume {
+                color: $gray;
+                font-weight: normal;
+              }
+            }
+          }
+
+          .delivered {
+            color: $purple;
+            font-size: 14px;
+            font-weight: bold;
+            padding-bottom: 10px;
+          }
+
+          .delivery {
+            color: $gray;
+            font-size: 12px;
+
+            input[type="radio"] {
+              margin-right: 10px;
+            }
+          }
+
+          .price-shipping {
+            margin-top: 10px;
+            .price {
+              color: $purple;
+              font-size: 20px;
+              display: inline-block;
+            }
+
+            .shipping {
+              color: $gray;
+              font-size: 12px;
+              display: inline-block;
+              position: absolute;
+              top: 7px;
+              right: 0;
+            }
+
+            button {
+              width: 100%;
+              border: 0;
+              background: $purple;
+              color: white;
+              font-weight: bold;
+              font-size: 14px;
+              padding: 10px 0;
+              margin-top: 10px;
+            }
+          }
+        }
+
+        a {
+          padding: 0;
+
+          &:hover {
+            .water-amount {
+              color: white;
+              background: $purple;
+            }
+          }
+        }
+
+        .water-amount {
+          background: #F4F5F6;
+          color: $purple;
+          text-align: center;
+          font-size: 14px;
+          margin-top: 20px;
+          padding: 20px 0;
+          transition: all 250ms;
+        }
+      }
+    }
+  }
+
+  .ocean-image {
+    background-image: url('../img/penta-beach.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 450px;
+
+    .hydration-calculator {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      padding: 40px 0px;
+      font-family: $circularbook;
+      max-width: 460px;
+      margin: 0 auto;
+      background: white;
+
+      @media (max-width: $mobile) {
+        padding: 50px 40px;
+      }
+
+      .hydration-calculator-inner {
+        text-align: center;
+        color: $purple;
+        max-width: 300px;
+        margin: 0 auto;
+
+        .text {
+          margin-bottom: 20px;
+          font-size: 20px;
+          font-weight: bold;
+        }
+
+        .info {
+          margin-bottom: 15px;
+          font-size: 14px;
+          line-height: 1.5em;
+          color: $gray;
+        }
+
+        input[type="text"] {
+          border: 0;
+          border-bottom: 1px solid $gray;
+          outline: none;
+          width: 100%;
+          text-align: center;
+          padding-bottom: 10px;
+
+          &::-webkit-input-placeholder {
+              color: $purple;
+            }
+            &:-moz-placeholder { /* Firefox 18- */
+              color: $purple;
+            }
+            &::-moz-placeholder {  /* Firefox 19+ */
+              color: $purple;
+            }
+            &:-ms-input-placeholder {
+              color: $purple;
+            }
+        }
+      }
+    }
+  }
+}

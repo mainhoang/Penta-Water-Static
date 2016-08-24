@@ -1,4 +1,4 @@
-.clouds {
+.banner {
   background-image: url('../img/clouds.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -28,6 +28,18 @@
 
     &#no-additives {
       background-image: url('../img/no-additives-icon.png');
+    }
+
+    &#patented-process-purple {
+      background-image: url('../img/purp-patent-process.png');
+    }
+
+    &#natural-ph-purple {
+      background-image: url('../img/purp-natural-ph.png');
+    }
+
+    &#no-additives-purple {
+      background-image: url('../img/purp-no-additives.png');
     }
   }
 
@@ -65,10 +77,10 @@
 
 
 .index {
-  .clouds {
+  .banner {
     .info {
       width: 32.9%;
-      
+
       .image {
         &#patented-process {
           background-image: url('../img/patent-process-icon.png');
@@ -87,7 +99,7 @@
 }
 
 .why {
-  .clouds {
+  .banner {
     .info {
       width: 19%;
 
@@ -111,6 +123,25 @@
         &#ozonation {
           background-image: url('../img/ozonation.png');
         }
+      }
+    }
+  }
+}
+
+.product {
+  .banner {
+    background-color: #F9FAFB;
+    background-image: none;
+
+    .info {
+      width: 32.9%;
+
+      .heading {
+        font-size: 22px;
+      }
+
+      .text {
+        color: $gray;
       }
     }
   }

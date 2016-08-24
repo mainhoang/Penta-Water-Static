@@ -10,80 +10,88 @@
 <body>
   <div class="content-wrapper product">
     {% include 'header' %}
-    <div class="column">
-      <div class="watermark">
-        <img src="img/13-step.png" />
-        <a href="#">learn more</a>
+    <div class="product-container">
+      <div class="column">
+        <div class="watermark">
+          <img src="img/13-step.png" />
+          <a href="#">learn more</a>
+        </div>
+
+        <div class="product-info">
+          <h1>ultra purified water</h1>
+          <div class="about-text">
+            Penta water is arsenic-free, chlorine-free, chromium 6-free, fluoride-free with less than 1ppm* total dissolved solids. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco
+          </div>
+          <div class="rating"></div>
+          <div class="review-count">(432)</div>
+          <a href="#">read reviews</a>
+        </div>
       </div>
 
-      <div class="product-info">
-        <h1>ultra purified water</h1>
-        <div class="about-text">
-          Penta water is arsenic-free, chlorine-free, chromium 6-free, fluoride-free with less than 1ppm* total dissolved solids. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco
+      <div class="column">
+        <div class="product-image">
+          <img src="img/product-bg.png" />
         </div>
-        <div class="rating"></div>
-        <div class="review-count">(432)</div>
-        <a href="#">read reviews</a>
+      </div>
+
+      <div class="column">
+        <div class="buy-outer">
+          <div class="buy-inner">
+            <div class="name">
+              penta water
+            </div>
+
+            <div class="dropdowns">
+              <select>
+                <option value="bottle">0.5 L bottle <span class="volume">24 / case</span></option>
+                <option value="bottle">0.5 L bottle <span class="volume">24 / case</span></option>
+                <option value="bottle">0.5 L bottle <span class="volume">24 / case</span></option>
+                <option value="bottle">0.5 L bottle <span class="volume">24 / case</span></option>
+              </select>
+
+              <select>
+                <option value="case">1 case</option>
+                <option value="case">1 case</option>
+                <option value="case">1 case</option>
+                <option value="case">1 case</option>
+              </select>
+            </div>
+
+            <div class="delivery">
+              <div class="delivered">
+                delivered
+              </div>
+              <input type="radio" name="delivery">every 30 days (save 20%)<br>
+              <input type="radio" name="delivery" checked>just once ($34.95)
+            </div>
+
+            <div class="price-shipping">
+              <div class="price">
+                $34.95
+              </div>
+
+              <div class="shipping">
+                ships today
+              </div>
+
+              <button type="button">
+                add to cart
+              </button>
+            </div>
+          </div>
+
+          <a href="#">
+            <div class="water-amount">
+              see how much water you should be drinking >
+            </div>
+          </a>
+        </div>
       </div>
     </div>
 
-    <div class="column">
-      <div class="product-image">
-        <img src="img/product-bg.png" />
-      </div>
-    </div>
-
-    <div class="column">
-      <div class="buy">
-        penta water
-
-        <div class="dropdowns">
-          <select>
-            <option value="bottle">0.5 L bottle 24 / case</option>
-            <option value="bottle">0.5 L bottle 24 / case</option>
-            <option value="bottle">0.5 L bottle 24 / case</option>
-            <option value="bottle">0.5 L bottle 24 / case</option>
-          </select>
-
-          <select>
-            <option value="case">1 case</option>
-            <option value="case">1 case</option>
-            <option value="case">1 case</option>
-            <option value="case">1 case</option>
-          </select>
-        </div>
-
-        <div class="delivery">
-          delivered
-          <input type="radio" name="delivery">every 30 days (save 20%)<br>
-          <input type="radio" name="delivery" checked>just once ($34.95)
-        </div>
-
-        <div class="price-shipping">
-          <div class="price">
-            $34.95
-          </div>
-
-          <div class="shipping">
-            shipping today
-          </div>
-
-          <button type="button">
-            add to cart
-          </button>
-        </div>
-
-        <a href="#">
-          <div class="water-amount">
-            see how much water you should be drinking >
-          </div>
-        </a>
-      </div>
-    </div>
-
-    <div class="info-container">
+    <div class="info-container banner">
       <div class="info">
         <div class="image" id="patented-process-purple"></div>
         <div class="heading">patented process</div>
@@ -111,7 +119,7 @@
       <div class="hydration-calculator">
         <div class="hydration-calculator-inner">
           <div class="text">
-            hyrdation calculator
+            hydration calculator
           </div>
 
           <div class="info">

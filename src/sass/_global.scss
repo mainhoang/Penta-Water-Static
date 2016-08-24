@@ -44,7 +44,7 @@ body {
     width: 110px;
     border-bottom: 3px solid #f8f8f8;
     transition: all 250ms;
-    color: gray;
+    color: $gray;
 
     &:hover {
       border-bottom: 3px solid $purple;
