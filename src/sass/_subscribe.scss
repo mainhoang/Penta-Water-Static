@@ -46,6 +46,7 @@
           padding: 8px 40px;
           font-size: 14px;
           transition: all 250ms;
+          -webkit-transition: all 250ms;
 
           &:hover {
             background: white;

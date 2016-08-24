@@ -44,6 +44,7 @@ body {
     width: 110px;
     border-bottom: 3px solid #f8f8f8;
     transition: all 250ms;
+    -webkit-transition: all 250ms;
     color: $gray;
 
     &:hover {

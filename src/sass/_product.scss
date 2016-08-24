@@ -4,6 +4,7 @@
     margin: 0 auto;
     text-align: center;
     padding-top: 100px;
+    padding-bottom: 50px;
     .column {
       width: 32.4%;
       display: inline-block;
@@ -144,6 +145,7 @@
           margin-top: 20px;
           padding: 20px 0;
           transition: all 250ms;
+          -webkit-transition: all 250ms;
         }
       }
     }
@@ -198,17 +200,17 @@
           padding-bottom: 10px;
 
           &::-webkit-input-placeholder {
-              color: $purple;
-            }
-            &:-moz-placeholder { /* Firefox 18- */
-              color: $purple;
-            }
-            &::-moz-placeholder {  /* Firefox 19+ */
-              color: $purple;
-            }
-            &:-ms-input-placeholder {
-              color: $purple;
-            }
+            color: $purple;
+          }
+          &:-moz-placeholder { /* Firefox 18- */
+            color: $purple;
+          }
+          &::-moz-placeholder {  /* Firefox 19+ */
+            color: $purple;
+          }
+          &:-ms-input-placeholder {
+            color: $purple;
+          }
         }
       }
     }
