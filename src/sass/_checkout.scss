@@ -7,12 +7,20 @@
     background: white;
     font-family: $circularbook;
     color: $gray;
+
+    @media (max-width: $mobile) {
+      margin-top: 30px;
+    }
     li {
       display: inline-block;
       padding: 0 50px;
 
       &.selected {
         color: $purple;
+      }
+
+      @media (max-width: $mobile) {
+        line-height: 1.5em;
       }
     }
   }
@@ -24,6 +32,11 @@
     margin-top: 50px;
     margin-bottom: 100px;
     position: relative;
+
+    @media (max-width: $mobile) {
+      margin-left: 5%;
+      margin-right: 5%;
+    }
 
     .ship-container {
       padding: 25px 50px;
@@ -68,10 +81,18 @@
 
       &#state {
         width: 64.5%;
+
+        @media (max-width: $mobile) {
+          width: 49%;
+        }
       }
 
       &#zip {
         width: 34.5%;
+
+        @media (max-width: $mobile) {
+          width: 49%;
+        }
       }
 
       &:focus {
@@ -104,6 +125,20 @@
       color: white;
       font-size: 20px;
       margin: 30px 0 50px;
+
+      &.desktop {
+        @media (max-width: $mobile) {
+          display: none;
+        }
+      }
+
+      &.mobile {
+        display: none;
+
+        @media (max-width: $mobile) {
+          display: block;
+        }
+      }
     }
   }
 
@@ -118,10 +153,20 @@
     top: 0;
     right: -200px;
 
+    @media (max-width: $mobile) {
+      position: static;
+      display: inline;
+    }
+
     .order-content {
       line-height: 2em;
       background: #D0EBFF;
       padding: 25px 0;
+
+      @media (max-width: $mobile) {
+        margin-left: 5%;
+        margin-right: 5%;
+      }
     }
 
     .purple {
@@ -153,10 +198,15 @@
 .caret {
   position: relative;
   display: none;
+
 }
 
 li.selected .caret {
   display: block;
+
+  @media (max-width: $mobile) {
+    display: none;
+  }
 }
 
 .caret:before {
