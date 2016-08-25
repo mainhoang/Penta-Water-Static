@@ -12,75 +12,91 @@
     {% include 'header' %}
 
     <div class="checkout-progress">
-      <ol>
-        <li>subscribe & save</li>
-        <li>my selection</li>
-        <li>finish up</li>
-      </ol>
+      <ul>
+        <li>1. subscribe & save
+          <div class="caret"></div>
+        </li>
+
+        <li>2. my selection
+          <div class="caret"></div>
+        </li>
+
+        <li class="selected">3. finish up
+          <div class="caret"></div>
+        </li>
+
+      </ul>
     </div>
 
-    <div class="ship-container">
-      <div class="shipping-form">
-        <h2>where should we ship?</h2>
-        <form>
-          <input type="text" placeholder="First name">
-          <input type="text" placeholder="Last name">
-          <input type="text" placeholder="Address Line 1">
-          <input type="text" placeholder="Address Line 2">
-          <input type="text" placeholder="City">
-          <input type="text" placeholder="State">
-          <input type="text" placeholder="Zip">
-          <input type="text" placeholder="Phone">
-          <input type="checkbox">Save this information for next time
-        </form>
+    <div class="order-container">
+      <div class="ship-container">
+        <div class="shipping-form">
+          <h2>where should we ship?</h2>
+          <form>
+            <input type="text" class="name" placeholder="First name">
+            <input type="text" class="name" placeholder="Last name">
+            <input type="text" placeholder="Address Line 1">
+            <input type="text" placeholder="Address Line 2">
+            <input type="text" placeholder="City">
+            <input type="text" id="state" placeholder="State">
+            <input type="text" id="zip" placeholder="Zip">
+            <input type="text" placeholder="Phone"><br>
+            <input type="checkbox">Save this information for next time
+          </form>
+        </div>
+
+        <div class="create-account">
+          <h2>create your account</h2>
+          <input type="text" placeholder="email address">
+          <input type="password" placeholder="password">
+          already have an account?
+          <a href="#">login here</a>
+        </div>
+
+        <button>continue</button>
       </div>
 
-      <div class="create-account">
-        <h2>create your account</h2>
-        <input type="text" placeholder="email address">
-        <input type="password" placeholder="password">
-        already have an account?
-        <a href="#">login here</a>
-      </div>
+      <div class="my-order">
+        <div class="order-content">
+          <div class="order-image">
+            <img src="img/11-bottles.png" />
+          </div>
+          <span class="purple">3 cases</span> of<br> <span class="purple">16.0oz bottles</span><br> delivered to my door<br> <span class="purple">every 30 days</span>
+        </div>
 
-      <button>continue</button>
+        <div class="cost-container">
+          <div class="cost-column">
+            <div class="cost">
+              subtotal
+            </div>
+            <div class="cost">
+              shipping
+            </div>
+            <div class="cost">
+              taxes
+            </div>
+            <div class="cost total">
+              total
+            </div>
+          </div>
+
+          <div class="cost-column">
+            <div class="cost">
+              $69.00
+            </div>
+            <div class="cost">
+              --
+            </div>
+            <div class="cost">
+              $5.95
+            </div>
+            <div class="cost total">
+              $75.24
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
-    <div class="my-order">
-      <div class="order-content">
-        <img src="img/11-bottles.png" />
-        3 cases of 16.0oz bottles delivered to my door every 30 days
-      </div>
-
-      <div class="cost-container">
-        <div class="costs">
-          <div class="cost">
-            subtotal
-          </div>
-          <div class="cost">
-            shipping
-          </div>
-          <div class="cost">
-            taxes
-          </div>
-          <div class="cost">
-            total
-          </div>
-        </div>
-        <div class="prices">
-          <div class="price">
-            $69.00
-          </div>
-          <div class="price">
-            --
-          </div>
-          <div class="price">
-            $5.95
-          </div>
-          <div class="price">
-            $75.24
-          </div>
-        </div>
 
     {% include 'footer' %}
   </div>
