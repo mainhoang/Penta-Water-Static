@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Penta</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css"/>
+</head>
+<body>
+  <div class="content-wrapper checkout">
+    {% include 'header' %}
+
+    <div class="checkout-progress">
+      <ol>
+        <li>subscribe & save</li>
+        <li>my selection</li>
+        <li>finish up</li>
+      </ol>
+    </div>
+
+    <div class="ship-container">
+      <div class="shipping-form">
+        <h2>where should we ship?</h2>
+        <form>
+          <input type="text" placeholder="First name">
+          <input type="text" placeholder="Last name">
+          <input type="text" placeholder="Address Line 1">
+          <input type="text" placeholder="Address Line 2">
+          <input type="text" placeholder="City">
+          <input type="text" placeholder="State">
+          <input type="text" placeholder="Zip">
+          <input type="text" placeholder="Phone">
+          <input type="checkbox">Save this information for next time
+        </form>
+      </div>
+
+      <div class="create-account">
+        <h2>create your account</h2>
+        <input type="text" placeholder="email address">
+        <input type="password" placeholder="password">
+        already have an account?
+        <a href="#">login here</a>
+      </div>
+
+      <button>continue</button>
+    </div>
+
+    <div class="my-order">
+      <div class="order-content">
+        <img src="img/11-bottles.png" />
+        3 cases of 16.0oz bottles delivered to my door every 30 days
+      </div>
+
+      <div class="cost-container">
+        <div class="costs">
+          <div class="cost">
+            subtotal
+          </div>
+          <div class="cost">
+            shipping
+          </div>
+          <div class="cost">
+            taxes
+          </div>
+          <div class="cost">
+            total
+          </div>
+        </div>
+        <div class="prices">
+          <div class="price">
+            $69.00
+          </div>
+          <div class="price">
+            --
+          </div>
+          <div class="price">
+            $5.95
+          </div>
+          <div class="price">
+            $75.24
+          </div>
+        </div>
+
+    {% include 'footer' %}
+  </div>
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="js/slick/slick.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
