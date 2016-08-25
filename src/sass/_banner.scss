@@ -136,6 +136,10 @@
     .info {
       width: 32.9%;
 
+      @media (max-width: $mobile) {
+        width: 100%;
+      }
+
       .heading {
         font-size: 22px;
       }
