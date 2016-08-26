@@ -1,0 +1,82 @@
+.subscribe-customize {
+
+  .checkout-progress {
+    text-align: center;
+    padding: 20px 0;
+    background: white;
+    font-family: $circularbook;
+    color: $gray;
+
+    @media (max-width: $mobile) {
+      margin-top: 30px;
+    }
+    li {
+      display: inline-block;
+      padding: 0 50px;
+
+      &.selected {
+        color: $purple;
+      }
+
+      @media (max-width: $mobile) {
+        line-height: 1.5em;
+        width: 100%;
+      }
+    }
+  }
+
+  .bottles-background {
+    background-image: url('../img/pink-bg.png');
+    height: 300px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .order {
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-family: $circularbook;
+
+    .purple {
+      font-weight: bold;
+      color: $purple;
+      text-decoration: underline;
+    }
+  }
+}
+
+.caret {
+  position: relative;
+  display: none;
+
+}
+
+li.selected .caret {
+  display: block;
+
+  @media (max-width: $mobile) {
+    display: none;
+  }
+}
+
+.caret:before {
+  content: '';
+  position: absolute;
+  top: 19px;
+  left: 37%;
+  border-top: 15px solid white;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+}
+
+.caret:after {
+  content: '';
+  position: absolute;
+  left: 100px;
+  top: 0;
+  border-top: -85px solid white;
+  border-left: -85px solid transparent;
+  border-right: -85px solid transparent;
+}
