@@ -1,0 +1,96 @@
+.blog-index {
+
+  .posts-container {
+    margin-top: 100px;
+    max-width: 800px;
+    margin: 0 auto;
+    border-bottom: 1px solid $gray;
+    font-family: $circularbook;
+    color: $gray;
+    padding-bottom: 80px;
+    margin-top: 80px;
+
+    .column {
+      width: 24%;
+      display: inline-block;
+      padding-left: 5px;
+      padding-right: 5px;
+      vertical-align: top;
+
+      .post {
+        margin-bottom: 20px;
+
+        .image {}
+        .title {
+          color: $purple;
+          font-size: 14px;
+          font-weight: bold;
+          padding: 10px 0;
+        }
+        .date {
+          color: $gray;
+          font-size: 12px;
+        }
+        .read-more {
+          a {
+            color: $purple;
+            text-decoration: underline;
+            padding: 0;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+
+
+
+    .post-title {
+      font-size: 40px;
+      color: $purple;
+      text-align: center;
+      padding-bottom: 30px;
+      font-family: 'CircularBold';
+      margin: 0 auto;
+      max-width: 720px;
+
+      @media (max-width: $mobile) {
+        padding-left: 5%;
+        padding-right: 5%;
+      }
+    }
+
+    .post-date {
+      text-align: center;
+    }
+
+    .post-text {
+
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 60px 0;
+      line-height: 1.5em;
+
+      @media (max-width: $mobile) {
+        padding-left: 5%;
+        padding-right: 5%;
+      }
+
+      p {
+        padding-bottom: 50px;
+      }
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .share-link {
+    margin-top: 80px;
+    text-align: center;
+    a {
+      color: $purple;
+    }
+  }
+
+}
