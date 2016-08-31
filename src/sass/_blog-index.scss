@@ -59,23 +59,25 @@
     a {
       color: $gray;
       text-decoration: underline;
-
     }
   }
 
   .sub-menu {
-  background: #F8F8F8;
-}
+    background: #F8F8F8;
+    position: relative;
+  }
 
   .sub-menu-container {
     max-width: 600px;
     margin: 0 auto;
     text-align: center;
 
+
+
     .sub-menu-link {
       display: inline-block;
       padding: 20px 0;
-      width: 110px;
+      width: 130px;
       border-bottom: 3px solid #f8f8f8;
       transition: all 250ms;
       -webkit-transition: all 250ms;
