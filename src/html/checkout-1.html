@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Penta</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="js/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css"/>
+</head>
+<body>
+  <div class="content-wrapper checkout">
+    {% include 'header' %}
+
+    <div class="checkout-progress">
+      <ul>
+        <li>1. subscribe & save
+          <div class="caret"></div>
+        </li>
+
+        <li>2. my selection
+          <div class="caret"></div>
+        </li>
+
+        <li class="selected">3. finish up
+          <div class="caret"></div>
+        </li>
+
+      </ul>
+    </div>
+
+    <div class="order-container">
+      <div class="ship-container">
+        <div class="shipping-form">
+          <h2>where should we ship?</h2>
+          <form>
+            <input type="text" class="name" placeholder="First name">
+            <input type="text" class="name" placeholder="Last name">
+            <input type="text" placeholder="Address Line 1">
+            <input type="text" placeholder="Address Line 2">
+            <input type="text" placeholder="City">
+            <input type="text" id="state" placeholder="State">
+            <input type="text" id="zip" placeholder="Zip">
+            <input type="text" placeholder="Phone"><br>
+            <input type="checkbox">Save this information for next time
+          </form>
+        </div>
+
+        <div class="create-account">
+          <h2>create your account</h2>
+          <input type="text" placeholder="email address">
+          <input type="password" placeholder="password">
+          already have an account?
+          <a href="#">login here</a>
+        </div>
+
+        <button class="desktop">continue</button>
+      </div>
+
+      <div class="my-order">
+        <div class="order-content">
+          <div class="order-image">
+            <img src="img/11-bottles.png" />
+          </div>
+          <span class="purple">3 cases</span> of<br> <span class="purple">16.0oz bottles</span><br> delivered to my door<br> <span class="purple">every 30 days</span>
+        </div>
+
+        <div class="cost-container">
+          <div class="cost-column">
+            <div class="cost">
+              subtotal
+            </div>
+            <div class="cost">
+              shipping
+            </div>
+            <div class="cost">
+              taxes
+            </div>
+            <div class="cost total">
+              total
+            </div>
+          </div>
+
+          <div class="cost-column">
+            <div class="cost">
+              $69.00
+            </div>
+            <div class="cost">
+              --
+            </div>
+            <div class="cost">
+              $5.95
+            </div>
+            <div class="cost total">
+              $75.24
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="mobile">continue</button>
+    </div>
+
+    {% include 'footer' %}
+  </div>
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="js/slick/slick.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

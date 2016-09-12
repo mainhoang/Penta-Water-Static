@@ -5,16 +5,37 @@
     text-align: center;
     padding-top: 100px;
     padding-bottom: 50px;
+
+    @media (max-width: $mobile) {
+      padding-bottom: 0;
+    }
     .column {
       width: 32.4%;
       display: inline-block;
       font-family: $circularbook;
       vertical-align: top;
 
+      @media (max-width: $mobile) {
+        width: 100%;
+        padding-bottom: 60px;
+        padding-left: 5%;
+        padding-right: 5%;
+      }
+
       .watermark {
         text-align: left;
+
+        @media (max-width: $mobile) {
+          text-align: center;
+          padding-bottom: 30px;
+        }
+
         img {
           display: block;
+
+          @media (max-width: $mobile) {
+            margin: 0 auto;
+          }
         }
       }
 
@@ -31,6 +52,11 @@
       .product-info {
         text-align: left;
         width: 280px;
+
+        @media (max-width: $mobile) {
+          margin: 0 auto;
+          text-align: center;
+        }
         h1 {
           color: $purple;
           font-size: 40px;
@@ -48,6 +74,10 @@
         margin: 0 auto;
         img {
           width: 140px;
+
+          @media (max-width: $mobile) {
+            width: 50%;
+          }
         }
       }
 
@@ -67,7 +97,7 @@
               display: block;
               border: 0;
               margin: 20px 0;
-              background: #F4F5F6;
+              background: $light-purple;
               height: 40px;
               width: 100%;
               color: $purple;
@@ -138,7 +168,7 @@
         }
 
         .water-amount {
-          background: #F4F5F6;
+          background: $light-purple;
           color: $purple;
           text-align: center;
           font-size: 14px;
@@ -169,7 +199,8 @@
       background: white;
 
       @media (max-width: $mobile) {
-        padding: 50px 40px;
+        padding: 50px 5%;
+        max-width: 95%;
       }
 
       .hydration-calculator-inner {
