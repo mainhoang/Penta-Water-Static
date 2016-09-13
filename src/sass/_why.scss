@@ -31,13 +31,13 @@
 
     .text {
       font-family: $circularbook;
-      color: $gray;
+      color: $text-gray;
       max-width: 820px;
       margin: 0 auto;
       padding-bottom: 80px;
       line-height: 1.5em;
       text-align: center;
-      border-bottom: 1px solid $gray;
+      border-bottom: 1px solid $text-gray;
 
       @media (max-width: $mobile) {
         padding-left: 5%;

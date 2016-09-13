@@ -3,200 +3,186 @@ header {
   top:0;
   left:0;
   z-index: 6;
-  height:72px;
+  height:60px;
   width: 100%;
   color: white;
   background-color: $purple;
-
   @media only screen and (max-width: 600px) {
     height: 100px;
   }
-}
-
-a {
-  color: white;
-  padding: 10px 15px;
-  text-decoration: none;
-  font-family: $circularbook;
-}
-
-
-nav {
-  margin: 0 auto;
-  text-align: center;
-  z-index: 1000;
-  background-color: $purple;
-  width: 1440px;
-  max-width: 100%;
-  height: 100%;
-  vertical-align: top;
-  position: relative;
-  div.nav-logo {
-    display: block;
+  nav {
+    z-index: 1000;
+    background-color: $purple;
     width: 100%;
-    height: 50px;
-    position: absolute;
-    background-image: url("../img/nav-logo.png");
-    background-repeat: no-repeat;
-    margin: 13px 20px;
-  }
-
-  ul.center-links {
-
-    display: inline-block;
-    text-align: center;
+    max-width: 100%;
+    height: 100%;
     vertical-align: top;
-    margin-top: 25px;
-
-    @media (max-width: 1200px) {
-      display: none;
-    }
-
-    a {
-      transition: border-color 250ms;
-      -webkit-transition: border-color 250ms;
-      border: 1px solid $purple;
-
-      &:hover {
-        border: 1px solid white;
-      }
-    }
-    li.navlink {
+    div.nav-logo {
+      position: absolute;
+      left: 0;
       display: inline-block;
-
-      @media (max-width: 1200px) {
-        display: none;
-      }
-    }
-  }
-
-  ul.right-links {
-    font-family: $circularbook;
-    font-size: 16px;
-    display: inline-block;
-    text-align: right;
-    position: absolute;
-    right: 0;
-    margin-top: 25px;
-
-    .free-shipping {
-      padding: 10px 0;
-      position: relative;
-      top: 50%;
-      transform: translateY(-24%);
-      border-right: 1px solid white;
-      padding-right: 20px;
-      display: inline-block;
-
-      @media (max-width: 1200px) {
-        display: none;
-      }
-    }
-
-    .cart {
-      background-image: url('../img/basket-icon.png');
-      height: 25px;
-      width: 25px;
-      display: inline-block;
-      background-size: contain;
+      width: 96px;
+      height: 100%;
+      margin: auto 16px;
+      background-image: url("../img/penta-logo.svg");
       background-repeat: no-repeat;
-      margin-left: 20px;
+      background-position: center;
 
+    }
+    ul.center-links {
+      display: inline-block;
+      width: 100%;
+      font-size: 1.5rem;
+      text-align: center;
+      font-family: "CircularBold";
+      margin: 14px auto;
       @media (max-width: 1200px) {
         display: none;
       }
+      a {
+        transition: border-color 250ms;
+        -webkit-transition: border-color 250ms;
+        border: 1px solid $purple;
+        padding: 8px 16px;
+        &:hover {
+          border: 1px solid white;
+        }
+      }
+      li.navlink {
+        display: inline-block;
+        @media (max-width: $mobile) {
+          display: none;
+        }
+      }
     }
 
-    .hamburger {
-      .hamburger-menu {
-        display: none;
-        z-index: 30;
+    ul.right-links {
+      font-family: $circularbook;
+      font-size: 1.3rem;
+      display: inline-block;
+      text-align: right;
+      position: absolute;
+      right: 0;
+      top: 0;
+      margin: 16px 34px;
+      .free-shipping {
+        padding: 8px 24px;
         position: relative;
-        top: -5px;
-        right: 25px;
-        width: 42px;
-        height: 35px;
-        cursor: pointer;
-
+        top: 50%;
+        transform: translateY(-24%);
+        border-right: 1px solid $lavender;
+        display: inline-block;
         @media (max-width: 1200px) {
-          display: inline-block;
+          display: none;
         }
+      }
 
-        .bar {
+      .cart {
+        background-image: url('../img/penta-cart.svg');
+        height: 26px;
+        width: 26px;
+        margin-left: 22px;
+        display: inline-block;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        @media (max-width: 1200px) {
+          display: none;
+        }
+      }
+
+      .hamburger {
+        .hamburger-menu {
+          display: none;
+          z-index: 30;
           position: relative;
-          transform: translateY(15px);
-          background: white;
-          transition: all 0ms 300ms;
-          -webkit-transition: all 0ms 300ms;
+          top: -5px;
+          right: 25px;
           width: 42px;
-          height: 5px;
-          &.animate {
-            background: rgba(255, 255, 255, 0);
+          height: 35px;
+          cursor: pointer;
+
+          @media (max-width: 1200px) {
+            display: inline-block;
           }
 
-          &:before {
-            content: "";
-            position: absolute;
-            left: 0;
-            bottom: 15px;
+          .bar {
+            position: relative;
+            transform: translateY(15px);
             background: white;
-            transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
-            -webkit-transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+            transition: all 0ms 300ms;
+            -webkit-transition: all 0ms 300ms;
             width: 42px;
             height: 5px;
+            &.animate {
+              background: rgba(255, 255, 255, 0);
+            }
+
+            &:before {
+              content: "";
+              position: absolute;
+              left: 0;
+              bottom: 15px;
+              background: white;
+              transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+              -webkit-transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+              width: 42px;
+              height: 5px;
+            }
+
+            &:after {
+              content: "";
+              position: absolute;
+              left: 0;
+              top: 15px;
+              background: white;
+              transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+              -webkit-transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+              width: 42px;
+              height: 5px;
+            }
           }
 
-          &:after {
-            content: "";
-            position: absolute;
-            left: 0;
-            top: 15px;
-            background: white;
-            transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
-            -webkit-transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
-            width: 42px;
-            height: 5px;
+          .bar.animate:after {
+            top: 0;
+            transform: rotate(45deg);
+            transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);;
+            -webkit-transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);;
           }
-        }
-
-        .bar.animate:after {
-          top: 0;
-          transform: rotate(45deg);
-          transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);;
-          -webkit-transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);;
-        }
-        .bar.animate:before {
-          bottom: 0;
-          transform: rotate(-45deg);
-          transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);;
-          -webkit-transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);;
+          .bar.animate:before {
+            bottom: 0;
+            transform: rotate(-45deg);
+            transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);;
+            -webkit-transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);;
+          }
         }
       }
     }
   }
-}
 
-.dropin {
-  position: fixed;
-  top: 72px;
-  left: -200%;
-  z-index: 90;
-  height: 100%;
-  width:100%;
-  background-color: white;
-  padding-top: 65px;
-  transition: all 300ms ease-in;
-  -webkit-transition: all 300ms ease-in;
-  text-align: center;
-  &.animate-menu {
-    left: 0;
+  .dropin {
+    position: fixed;
+    top: 72px;
+    left: -200%;
+    z-index: 90;
+    height: 100%;
+    width:100%;
+    background-color: white;
+    padding-top: 65px;
+    transition: all 300ms ease-in;
+    -webkit-transition: all 300ms ease-in;
+    text-align: center;
+    &.animate-menu {
+      left: 0;
+    }
+    li {
+      display: block;
+      margin: 40px auto;
+    }
+    .dropin-link {
+      font-size: 32px;
+      color: $purple;
+    }
   }
-  li {
-    display: block;
-    margin: 40px auto;
-  }
-  .dropin-link {
-    font-size: 32px;
-    color: $purple;
-  }
+
 }

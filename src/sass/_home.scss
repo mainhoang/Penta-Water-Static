@@ -1,25 +1,43 @@
 .carousel {
+  background-color: black;
   .image {
     img {
       width: 100%;
     }
   }
 }
-
-.heading {
-  font-size: 40px;
-  color: $purple;
-  text-align: center;
-  padding-bottom: 30px;
-  font-family: 'CircularBold';
-}
-
-.ultra-purified {
-
-  padding-top: 60px;
-  position: relative;
-
-  .bottle {
+section.ultra-purified {
+  background-image: url("../img/bg-bottles.png");
+  background-size: cover;
+  hgroup{
+    padding-top: 98px;
+    text-align: center;
+    div {
+      display: inline-block;
+      width: 100px;
+      height: 100px;
+      background-image: url("../img/13-step.svg");
+      background-repeat: no-repeat;
+      vertical-align: middle;
+    }
+    h3 {
+      display: inline-block;
+      vertical-align: middle;
+      letter-spacing: -0.8px;
+      margin-left: 8px;
+    }
+  }
+  p {
+    text-align: center;
+    max-width: 710px;
+    margin: 0 auto;
+    line-height: 1.5em;
+    @media (max-width: $mobile) {
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+  }
+  /*.bottle {
     position: absolute;
     width: 31%;
     img {
@@ -35,47 +53,24 @@
   .right-bottle {
     top: -20px;
     right: -140px;
-  }
-
-  .heading-text {
-    display: inline-block;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-
-  .purified-copy {
-    text-align: center;
-    color: gray;
-    padding-bottom: 30px;
-    max-width: 710px;
-    margin: 0 auto;
-    font-family: $circularbook;
-    line-height: 1.5em;
-
-    @media (max-width: $mobile) {
-      padding-left: 5%;
-      padding-right: 5%;
+  }*/
+  div.purified-ingredients {
+    background: $bg-gray;
+    border: 1px solid purple;
+    padding: 30px 50px;
+    width: 100%;
+    margin-top: 40px;
+    p {
+      color: $purple;
+      max-width: 100%;
     }
   }
 
-  .purified-ingredients {
-    background: #F7F8F9;
-    color: $purple;
-    padding: 30px 40px;
-    max-width: 800px;
-    margin: 0 auto;
-    font-family: $circularbook;
-    line-height: 1.5em;
-  }
-
   .purified-fine {
+    color: $text-gray;
     text-align: center;
-    color: gray;
-    margin-top: 30px;
-    font-family: $circularbook;
-    font-size: 10px;
-
+    margin: 26px auto 54px auto;
+    font-size: 1.2rem;
     @media (max-width: $mobile) {
       padding-left: 5%;
       padding-right: 5%;
@@ -83,7 +78,15 @@
     }
   }
 }
-
+section.clouds {
+  //background-image: url('../img/clouds.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  ul {
+    margin: 0px auto;
+  }
+}
 .naturally-balanced {
 
   h2 {

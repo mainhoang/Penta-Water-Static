@@ -40,7 +40,7 @@
       }
 
       a {
-        color: $gray;
+        color: $text-gray;
       }
 
       a[data-readmore-toggle] {
@@ -64,7 +64,7 @@
         }
 
         .about-text {
-          color: $gray;
+          color: $text-gray;
           font-size: 14px;
         }
       }
@@ -83,7 +83,7 @@
 
       .buy-outer {
         text-align: left;
-        border: 2px solid $gray;
+        border: 2px solid $text-gray;
 
         .buy-inner {
           padding: 25px 25px 0 25px;
@@ -104,7 +104,7 @@
               font-weight: bold;
 
               &.volume {
-                color: $gray;
+                color: $text-gray;
                 font-weight: normal;
               }
             }
@@ -118,7 +118,7 @@
           }
 
           .delivery {
-            color: $gray;
+            color: $text-gray;
             font-size: 12px;
 
             input[type="radio"] {
@@ -135,7 +135,7 @@
             }
 
             .shipping {
-              color: $gray;
+              color: $text-gray;
               font-size: 12px;
               display: inline-block;
               position: absolute;
@@ -219,12 +219,12 @@
           margin-bottom: 15px;
           font-size: 14px;
           line-height: 1.5em;
-          color: $gray;
+          color: $text-gray;
         }
 
         input[type="text"] {
           border: 0;
-          border-bottom: 1px solid $gray;
+          border-bottom: 1px solid $text-gray;
           outline: none;
           width: 100%;
           text-align: center;

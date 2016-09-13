@@ -1,9 +1,5 @@
 .banner {
-  background-image: url('../img/clouds.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  height: 270px;
+  height: 100%;
 
   @media (max-width: $mobile) {
     height: auto;
@@ -11,7 +7,7 @@
     padding-bottom: 60px;
   }
 
-  .image {
+  .banner-icons {
     height: 50px;
     width: 50px;
     background-repeat: no-repeat;
@@ -59,17 +55,15 @@
       margin-bottom: 40px;
     }
 
-    .clouds-heading {
-      font-size: 22px;
-      font-family: $circularbook;
-      padding-bottom: 20px;
+    h6 {
+      padding: 16px 0;
     }
 
-    .text {
+    p.banner-text {
       width: 200px;
       margin: 0 auto;
       font-family: $circularbook;
-      font-size: 12px;
+      font-size: 1.4rem;
       line-height: 1.5em;
     }
   }
@@ -145,7 +139,7 @@
       }
 
       .text {
-        color: $gray;
+        color: $text-gray;
       }
     }
   }

@@ -60,7 +60,7 @@
   .whitebox-container {
     max-width: 800px;
     margin: 0 auto;
-    border: 1px solid $gray;
+    border: 1px solid $text-gray;
     position: relative;
     bottom: 80px;
     background: white;
@@ -82,7 +82,7 @@
         }
 
         &.sampler {
-          border-right: 1px solid $gray;
+          border-right: 1px solid $text-gray;
 
           @media (max-width: $mobile) {
             margin-bottom: 40px;
@@ -110,7 +110,7 @@
           }
 
           .about {
-            color: $gray;
+            color: $text-gray;
             font-size: 12px;
             line-height: 1.5em;
             padding: 0 20px;
