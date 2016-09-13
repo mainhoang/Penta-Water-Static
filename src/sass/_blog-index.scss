@@ -5,7 +5,7 @@
     max-width: 800px;
     margin: 0 auto;
     font-family: $circularbook;
-    color: $gray;
+    color: $text-gray;
     padding-bottom: 80px;
     margin-top: 80px;
 
@@ -38,7 +38,7 @@
           padding: 10px 0;
         }
         .date {
-          color: $gray;
+          color: $text-gray;
           font-size: 12px;
         }
         .read-more {
@@ -57,7 +57,7 @@
   .load-more {
     text-align: center;
     a {
-      color: $gray;
+      color: $text-gray;
       text-decoration: underline;
     }
   }
@@ -81,7 +81,7 @@
       border-bottom: 3px solid #f8f8f8;
       transition: all 250ms;
       -webkit-transition: all 250ms;
-      color: $gray;
+      color: $text-gray;
 
       &:hover {
         border-bottom: 3px solid $purple;
@@ -104,4 +104,3 @@
   }
 
 }
-

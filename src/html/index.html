@@ -8,16 +8,17 @@
   <link rel="stylesheet" type="text/css" href="./js/slick/slick-theme.css"/>
 </head>
 <body>
-  <div class="content-wrapper index">
+  <main class="index">
+
     {% include 'header' %}
 
     <section class="row">
-      <div class="content carousel">
+      <div class="carousel">
         <div class="image">
           <img src="./img/penta-beach.jpg" />
         </div>
         <div class="image">
-          <img src="./img/penta-beach.jpg" />
+          <img src="./img/hero-2.jpg" />
         </div>
         <div class="image">
           <img src="./img/penta-beach.jpg" />
@@ -25,53 +26,56 @@
       </div>
     </section>
 
-    <section class="row">
-      <div class="content ultra-purified">
-        <div class="bottle left-bottle">
+    <section class="row ultra-purified">
+      <div class="content">
+        <!--<div class="bottle left-bottle">
           <img src="img/lft-bg-bottle.png" />
         </div>
 
         <div class="bottle right-bottle">
           <img src="img/rt-bg-bottle.png" />
-        </div>
-        <div class="heading">
-          <img src="img/13-step.png" />
-          <div class="heading-text">ultra-purified water</div>
-        </div>
-        <div class="purified-copy">
+        </div>-->
+        <hgroup>
+          <div></div>
+          <h3 class="heading-text">ultra-purified water</h3>
+        </hgroup>
+        <p>
           Sourced from a natural mountain aquifer deep within Southern California's high desert, Penta utilizes a patented 13-step reverse osmosis purification process to remove more impurities than any other bottled water for perfectly pure hydration and taste.
-        </div>
+        </p>
         <div class="purified-ingredients">
-          Penta water is <strong><u>arsenic-free</u></strong>, <strong><u>chlorine-free</u></strong>, <strong><u>chromium 6-free</u></strong>, <strong><u>fluoride-free</u></strong>, <strong><u>MTBE-free</u></strong>, <strong><u>pharmaceutical-free</u></strong> and <strong><u>BPA/BPS-free</u></strong> with typical dissolved solids of less than <strong><u>one part per million</u></strong>.
+          <p>Penta water is <strong><u>arsenic-free</u></strong>, <strong><u>chlorine-free</u></strong>, <strong><u>chromium 6-free</u></strong>, <strong><u>fluoride-free</u></strong>, <strong><u>MTBE-free</u></strong>, <strong><u>pharmaceutical-free</u></strong> and <strong><u>BPA/BPS-free</u></strong> with typical dissolved solids of less than <strong><u>one part per million</u></strong>.</p>
         </div>
         <div class="purified-fine">
-          family-owned company | bottled with solar energy
+          family-owned company  |  <u>bottled with solar energy</u>
         </div>
       </div>
     </section>
-    <section class="row">
-      <div class="content banner">
-        <div class="info">
-          <div class="image" id="patented-process"></div>
-          <div class="clouds-heading">patented process</div>
-          <div class="text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-          </div>
-        </div>
-        <div class="info">
-          <div class="image" id="natural-ph"></div>
-          <div class="clouds-heading">natural pH</div>
-          <div class="text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-          </div>
-        </div>
-        <div class="info">
-          <div class="image" id="no-additives"></div>
-          <div class="clouds-heading">no additives</div>
-          <div class="text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-          </div>
-        </div>
+
+    <section class="row clouds">
+      <div class="content">
+        <ul class="banner">
+          <li class="info">
+            <div class="banner-icons" id="patented-process"></div>
+            <h6>patented process</h6>
+            <p class="banner-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            </p>
+          </li>
+          <li class="info">
+            <div class="banner-icons" id="natural-ph"></div>
+            <h6>natural pH</h6>
+            <p class="banner-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            </p>
+          </li>
+          <li class="info">
+            <div class="banner-icons" id="no-additives"></div>
+            <h6>no additives</h6>
+            <p class="banner-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            </p>
+          </li>
+        </ul>
       </div>
     </section>
     <section class="row">
@@ -167,7 +171,7 @@
 
     {% include 'stores' %}
     {% include 'footer' %}
-  </div>
+  </main>
 
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
