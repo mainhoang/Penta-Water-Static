@@ -56,7 +56,6 @@ section.ultra-purified {
   }*/
   div.purified-ingredients {
     background: $bg-gray;
-    border: 1px solid purple;
     padding: 30px 50px;
     width: 100%;
     margin-top: 40px;
@@ -69,7 +68,7 @@ section.ultra-purified {
   .purified-fine {
     color: $text-gray;
     text-align: center;
-    margin: 26px auto 54px auto;
+    margin: 28px auto 54px auto;
     font-size: 1.2rem;
     @media (max-width: $mobile) {
       padding-left: 5%;
@@ -83,8 +82,12 @@ section.clouds {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  div.content {
+    width: 70%;
+    max-width: 1000px;
+  }
   ul {
-    margin: 0px auto;
+    padding: 78px 0;
   }
 }
 .naturally-balanced {
