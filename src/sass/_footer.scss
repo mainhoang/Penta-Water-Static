@@ -1,161 +1,100 @@
 footer {
   background: $purple;
-
-  .footer-container {
-    position: relative;
-    height:300px;
-    max-width: 1220px;
+  div.footer-container {
+    height:200px;
+    max-width: 1290px;
     margin: 0 auto;
     color: white;
-    font-family: 'CircularBook';
-    padding-top: 30px;
+    padding-top: 18px;
     padding-bottom: 100px;
-
     @media (max-width: 950px) {
       height: 910px;
     }
-
-    .footer-left, .footer-right {
-      // width: 49.8%;
+    aside.left {
+      width: 20%;
       display: inline-block;
-      position: absolute;
-    }
-
-    .footer-mobile-signup {
-      display: none;
-
-      @media (max-width: 950px) {
-        display: block;
+      padding: 0 10px;
+      p {
+        font-size: 1rem;
+        color: white;
+        text-align: left;
+        a {
+          display: inline-block;
+        }
+      }
+      p:first-child {
+        font-size: 2.5rem;
+        line-height: 1;
+        padding-bottom: 8px;
       }
     }
-
-    .footer-left {
-      left:0;
+    ul.middle {
+      text-align: center;
+      display: inline-block;
+      width: 32%;
       vertical-align: top;
-      ul {
-        li.footer-outer {
-          &:nth-child(1) {
-            width:244px;
-
-            @media (max-width: 950px) {
-              width: 100%;
-            }
-          }
-          &:nth-child(2) {
-            width:172px;
-
-            @media (max-width: 950px) {
-              width: 100%;
-            }
-          }
-          &:nth-child(3) {
-            width:154px;
-
-            @media (max-width: 950px) {
-              width: 100%;
-            }
-          }
-          &:nth-child(4) {
-            width:100px;
-
-            @media (max-width: 950px) {
-              width: 100%;
-            }
-          }
-        }
-      }
-
-      @media (max-width: 950px) {
+      margin-left: 20px;
+      @media (max-width: $tablet) {
         width: 100%;
-        padding-left: 5%;
-        padding-right: 5%;
+        display: block;
+        float: none;
+        text-align: center;
+        padding: 50px 0 70px 0;
       }
-      .footer-outer {
+      @media (max-width: $mobile) {
+        text-align: center;
+        padding-bottom: 50px;
+      }
+      li {
+        width: 32.7%;
         display: inline-block;
-        font-size: 10px;
         vertical-align: top;
-
-        &.desktop {
-          @media (max-width: 950px) {
-            display: none;
-          }
-        }
-
-        &.mobile {
-          display: none;
-
-          @media (max-width: 950px) {
-            display: block;
-          }
-
-        }
-
-        @media (max-width: 950px) {
-          width: 100%;
+        padding: 10px;
+        list-style-type: none;
+        @media (max-width: $tablet) {
           text-align: center;
-          padding-top: 50px;
-          font-size: 15px;
+          padding: 0 5%;
         }
-
-        .footer-inner {
-          list-style-type: none;
-          li {
-            line-height: 2em;
+        @media (max-width: $mobile) {
+          display: inline-block;
+          width: 80%;
+          text-align: center;
+          padding: 20px 0;
+        }
+        p {
+          color: white;
+          text-align: left;
+          font-size: 1.2rem;
+          font-family: "CircularBold";
+          color: white;
+          @media (max-width: $mobile) {
+            font-size: 1.4rem;
           }
-          li.footer-logo {
-            font-size: 26px;
-            line-height: 1em;
-
-            @media (max-width: 950px) {
-              font-size: 30px;
-              padding-bottom: 10px;
-            }
+        }
+        a {
+          font-size: 0.9rem;
+          text-align: left;
+          line-height: 2;
+          @media (max-width: $mobile) {
+            font-size: 1.0rem;
           }
-
-          li.footer-heading {
-            font-weight: bold;
-            font-size: 15px;
-
-            @media (max-width: 950px) {
-              font-size: 22px;
-            }
-          }
-
-          a {
-            padding: 0;
-          }
-
-          .social-image {
-            width: 15px;
-            height: 15px;
-            background-size: contain;
-            background-repeat: no-repeat;
+          div {
+            width: 13px;
+            height: 13px;
+            background-color: white;
             display: inline-block;
-            margin-right: 5px;
+            margin-right: 10px;
+            vertical-align: middle;
 
-            &#instagram {
-              background-image: url('../img/footer-instagram.png');
-            }
-
-            &#facebook {
-              background-image: url('../img/footer-facebook.png');
-            }
-
-            &#twitter {
-              background-image: url('../img/footer-twitter.png');
-            }
-          }
-
-          .social-name {
-            display: inline-block;
-            vertical-align: top;
           }
         }
       }
     }
-
     .footer-right {
+      position: absolute;
       right:0;
+      display: inline-block;
+
       @media (max-width: 950px) {
         display: none;
       }
