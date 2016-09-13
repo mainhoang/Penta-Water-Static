@@ -1,6 +1,5 @@
 ul.banner {
   height: 100%;
-  padding: 50px 0;
   text-align: center;
   @media (max-width: $mobile) {
     height: auto;
@@ -40,9 +39,8 @@ ul.banner {
     }
   }
 
-  .info {
+  li.info {
     display: inline-block;
-    color: white;
     text-align: center;
     position: relative;
     //top: 50%;

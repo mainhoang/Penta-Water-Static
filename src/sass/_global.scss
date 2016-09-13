@@ -11,6 +11,7 @@
   position: relative;
   padding: 0;
   margin: 0;
+  background-repeat: no-repeat;
 }
 html, body {
   transition:all 300ms ease-in;
@@ -25,9 +26,12 @@ body {
   overflow-x: hidden;
   //background-image: url("../img/home.jpg");
   background-size: 100%;
+  background-repeat: no-repeat;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: "CircularBold";
+  text-align: center;
+  color: $purple;
 }
 h1 {
   font-size: 8.4rem;
@@ -58,13 +62,13 @@ h3 {
   }
 }
 h4 {
-  font-size: 1.6rem;
+  font-size: 3.4rem;
   @media (max-width: $break) {
     font-size: 1.4rem;
   }
 }
 h5 {
-  font-size: 1.4rem;
+  font-size: 2.4rem;
 }
 h6 {
   font-size: 2rem
@@ -77,16 +81,18 @@ a {
 p{
   font-family: "CircularBook";
   font-size: 1.8rem;
-  line-height: 1.9;
+  line-height: 1.5;
   color: $text-gray;
+  text-align: center;
 }
 ul {
   list-style-type: none;
 }
-.row {
+section.row {
   width: 100%;
+  background-repeat: no-repeat;
 }
-.content {
+article.content {
   width: 64%;
   max-width: 920px;
   margin: 0 auto;
