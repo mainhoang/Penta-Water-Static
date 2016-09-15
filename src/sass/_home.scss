@@ -15,9 +15,15 @@ section.thing {
     @media (max-width: $tablet) {
       padding-top: 16vw;
     }
+    @media (max-width:$mobile) {
+      padding-top: 190px;
+    }
     h1 {
       color: white;
       letter-spacing: -10px;
+      @media (max-width:$mobile) {
+        letter-spacing: -4px;
+      }
     }
   }
   .carousel {
