@@ -11,6 +11,9 @@ footer {
     @media (max-width: $break) {
       height: 460px;
     }
+    @media (max-width: $mobile) {
+      height: 780px;
+    }
     aside.left {
       width: 280px;
       display: inline-block;
@@ -33,10 +36,24 @@ footer {
         text-align: left;
         @media (max-width: $break) {
           text-align: center;
-
+        }
+        @media (max-width: $mobile) {
+          font-size: 1.2rem;
         }
         a {
           display: inline-block;
+          padding: 4px 4px;
+          span {
+            padding-left: 4px;
+          }
+        }
+        a:first-child {
+          padding-left: 0;
+        }
+        a:last-child {
+          @media (max-width: $mobile) {
+            display: none;
+          }
         }
       }
       p:first-child {
@@ -95,7 +112,7 @@ footer {
         }
         @media (max-width: $mobile) {
           width: 80%;
-          padding: 20px 0;
+          padding: 25px 0;
         }
         p {
           color: white;
@@ -110,7 +127,8 @@ footer {
             font-size: 2rem;
           }
           @media (max-width: $mobile) {
-            font-size: 1.4rem;
+            font-family: "CircularBook";
+            font-size: 2.5rem;
           }
         }
         a {
@@ -122,7 +140,7 @@ footer {
             text-align: center;
           }
           @media (max-width: $mobile) {
-            font-size: 1.0rem;
+            font-size: 1.4rem;
           }
           div {
             width: 14px;
@@ -148,9 +166,9 @@ footer {
         a {
           @media (max-width: $break) {
             text-align: left;
-            margin-left: 14px;
+            width: 72px;
+            margin: auto;
           }
-
         }
       }
     }
@@ -163,7 +181,6 @@ footer {
         position: absolute;
         top: 0;
         width: 100%;
-
       }
       div p {
         color: white;
@@ -181,6 +198,9 @@ footer {
           text-align: center;
           padding-top: 40px;
           font-size: 2rem;
+        }
+        @media (max-width: $mobile) {
+          font-size: 2.5rem;
         }
         input {
           padding: 10px 0;
