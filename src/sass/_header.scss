@@ -1,8 +1,7 @@
 header {
-  position: fixed;
+  position: absolute;
   top:0;
   left:0;
-  z-index: 1000;
   height:60px;
   width: 100%;
   color: white;
@@ -11,11 +10,18 @@ header {
     height:52px;
   }
   nav {
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 1000;
     background-color: $purple;
     width: 100%;
     max-width: 100%;
-    height: 100%;
+    height: 60px;
     vertical-align: top;
+    @media (max-width: $mobile) {
+      height:52px;
+    }
     div.nav-logo {
       position: absolute;
       left: 0;
@@ -120,7 +126,6 @@ header {
           @media (max-width: $mobile) {
             top: -2px;
           }
-
           .bar {
             position: relative;
             transform: translateY(15px);
@@ -172,29 +177,52 @@ header {
     }
   }
 
-  .dropin {
+  div.dropin {
     position: fixed;
-    top: 72px;
-    left: -200%;
+    top: 52px;
+    left:0;
     z-index: 90;
     height: 100%;
     width:100%;
-    background-color: white;
-    padding-top: 65px;
+    background-color: $dropin-purple;
+    padding: 10px 30px;
     transition: all 300ms ease-in;
     -webkit-transition: all 300ms ease-in;
     text-align: center;
     &.animate-menu {
-      left: 0;
+      top: 10px;
     }
     li {
       display: block;
-      margin: 40px auto;
+      margin: 20px auto;
+      text-align: left;
     }
-    .dropin-link {
-      font-size: 32px;
-      color: $purple;
+    ul.top {
+      a {
+        font-family: "CircularBold";
+        font-size: 3.6rem;
+        color: white;
+      }
+      li:last-child {
+        margin: 50px auto;
+        span {
+          margin: auto 10px;
+          color: $red;
+          font-size: 1.8rem;
+
+        }
+      }
+    }
+    ul.bottom {
+      a {
+        font-size: 2.6rem;
+        color: white;
+      }
+    }
+    li:last-child {
+      span {
+        font-family: "CircularBold";
+      }
     }
   }
-
 }
