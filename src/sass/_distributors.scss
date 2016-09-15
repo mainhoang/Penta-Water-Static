@@ -15,6 +15,12 @@ section.stores {
       height: 106px;
       margin: 0 auto;
       text-align: center;
+      @media (max-width: $big-break) {
+        height: 80px;
+      }
+      @media (max-width: $break) {
+        height: 60px;
+      }
       li {
         margin: 15px auto;
         display: inline-block;
@@ -24,6 +30,12 @@ section.stores {
         background-position: center;
         background-size: contain;
         vertical-align: middle;
+        @media (max-width: $big-break) {
+          margin: 12px auto;
+        }
+        @media (max-width: $big-break) {
+          margin: 10px auto;
+        }
         &:nth-child(1) {
           background-image: url("../img/stores/whole-foods.svg");
         }

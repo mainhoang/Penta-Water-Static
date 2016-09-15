@@ -6,6 +6,15 @@ section.thing {
     width: 100%;
     z-index: 500;
     padding-top: 19.7vw;
+    @media (max-width: $big-break) {
+      padding-top: 18vw;
+    }
+    @media (max-width: $break) {
+      padding-top: 17vw;
+    }
+    @media (max-width: $tablet) {
+      padding-top: 16vw;
+    }
     h1 {
       color: white;
       letter-spacing: -10px;
@@ -20,16 +29,20 @@ section.thing {
       }
     }
   }
-
 }
 section.ultra-purified {
   background-image: url("../img/bg-bottles.png");
   background-size: 100%;
   background-position: top;
-  //margin-top: 50px;
+  @media (max-width: $big-break) {
+    background-position: center;
+  }
   article {
     padding-top: 98px;
     padding-bottom: 54px;
+    @media (max-width: $big-break) {
+      padding-top: 76px;
+    }
     hgroup{
       text-align: center;
       div {
@@ -47,9 +60,13 @@ section.ultra-purified {
         margin-left: 8px;
       }
     }
-    p {
+    p.outside-of-the-box {
+      width: 77%;
       max-width: 710px;
       margin: 0 auto;
+      @media (max-width: $big-break) {
+        max-width: 600px;
+      }
       @media (max-width: $mobile) {
         padding-left: 5%;
         padding-right: 5%;
@@ -77,24 +94,8 @@ section.ultra-purified {
       }
     }
   }
-  /*.bottle {
-    position: absolute;
-    width: 31%;
-    img {
-      width: 100%;
-    }
-  }
-
-  .left-bottle {
-    top: -10px;
-    left: -110px;
-  }
-
-  .right-bottle {
-    top: -20px;
-    right: -140px;
-  }*/
 }
+
 section.clouds {
   background-image: url('../img/clouds.jpg');
   background-size: cover;
@@ -103,6 +104,9 @@ section.clouds {
     width: 70%;
     max-width: 1000px;
     padding: 78px 0;
+    @media (max-width: $tablet) {
+      width: 85%;
+    }
     h6, p {
       color: white;
     }
@@ -152,12 +156,20 @@ section.delivered {
       text-align: center;
       margin: 0 auto;
       padding: 50px 0;
-      //top: 50%;
-      //transform: translateY(-50%);
+      @media (max-width: $break) {
+        padding: 50px 5%;
+      }
+      @media (max-width: $tablet) {
+        padding: 50px 10%;
+      }
       h3 {
         color: white;
         padding-top: 10px;
         padding-bottom: 18px;
+        @media (max-width: $delivered-break) {
+          font-size: 3rem;
+          padding: 20px 0;
+        }
       }
       p {
         font-size: 1.3rem;
@@ -177,6 +189,9 @@ section.delivered {
         border: 1px solid white;
         width: 318px;
         margin: 24px auto 28px auto;
+        @media (max-width: $tablet) {
+          width: 65%;
+        }
         a {
           display: inline-block;
           width: 49.6%;
@@ -184,7 +199,7 @@ section.delivered {
           font-size: 1.4rem;
           transition: all 250ms;
           -webkit-transition: all 250ms;
-          @media (max-width: $mobile) {
+          @media (max-width: $delivered-break) {
             width: 100%;
           }
         }
@@ -224,9 +239,8 @@ section.instagram {
     padding-top: 126px;
     padding-bottom: 58px;
     margin: 0 auto;
-    @media (max-width: $tablet) {
-      padding-left: 5%;
-      padding-right: 5%;
+    @media (max-width: $break) {
+      padding-top: 90px;
     }
     @media (max-width: $mobile) {
       margin: 0 auto;
@@ -241,6 +255,12 @@ section.instagram {
     ul {
       padding-top: 46px;
       text-align: center;
+      @media (max-width: $break) {
+        padding: 5%;
+      }
+      @media (max-width: $tablet) {
+        padding: 7%;
+      }
       @media (max-width: $mobile) {
         overflow: auto;
         white-space: nowrap;
@@ -252,7 +272,14 @@ section.instagram {
         margin: 4px;
         background-repeat: no-repeat;
         background-size: cover;
-
+        @media (max-width: $break) {
+          width: 18vw;
+          height: 18vw;
+        }
+        @media (max-width: $break) {
+          width: 18vw;
+          height: 18vw;
+        }
         &:nth-child(1) {
           background-image: url("../img/hash-1.jpg");
         }
@@ -288,11 +315,6 @@ section.instagram {
         }
         &:nth-child(12) {
           background-image: url("../img/hash-12.jpg");
-        }
-        @media (max-width: $tablet) {
-          width: 40vw;
-          margin: 2%;
-          height: 40vw;
         }
         @media (max-width: $mobile) {
           position:relative;

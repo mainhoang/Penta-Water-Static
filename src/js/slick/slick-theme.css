@@ -70,7 +70,7 @@
     font-size: 20px;
     line-height: 1;
 
-    opacity: .75;
+    opacity: 1;
     color: white;
 
     -webkit-font-smoothing: antialiased;
@@ -160,7 +160,7 @@
 
     cursor: pointer;
 
-    color: transparent;
+    color: white;
     border: 0;
     outline: none;
     background: transparent;
@@ -173,7 +173,7 @@
 .slick-dots li button:hover:before,
 .slick-dots li button:focus:before
 {
-    opacity: .5;
+    opacity: 1;
 }
 .slick-dots li button:before
 {
@@ -191,7 +191,7 @@
     content: '•';
     text-align: center;
 
-    opacity: 1;
+    opacity: .85;
     color: white;
 
     -webkit-font-smoothing: antialiased;
