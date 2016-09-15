@@ -179,7 +179,7 @@ header {
 
   div.dropin {
     position: fixed;
-    top: 52px;
+    top: -100%;
     left:0;
     z-index: 90;
     height: 100%;
@@ -190,7 +190,10 @@ header {
     -webkit-transition: all 300ms ease-in;
     text-align: center;
     &.animate-menu {
-      top: 10px;
+      top: 60px;
+      @media (max-width: $mobile) {
+        top: 52px;
+      }
     }
     li {
       display: block;
