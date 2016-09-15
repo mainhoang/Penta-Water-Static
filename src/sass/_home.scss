@@ -54,6 +54,9 @@ section.ultra-purified {
         background-image: url("../img/13-step.svg");
         background-repeat: no-repeat;
         vertical-align: middle;
+        @media (max-width: $mobile) {
+          margin: 30px auto;
+        }
       }
       h3 {
         display: inline-block;
