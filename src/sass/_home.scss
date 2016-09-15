@@ -1,16 +1,32 @@
-.carousel {
-  background-color: black;
-  .image {
-    img {
-      width: 100%;
+section.thing {
+  position: relative;
+  z-index: 50;
+  hgroup {
+    position: absolute;
+    width: 100%;
+    z-index: 500;
+    padding-top: 19.7vw;
+    h1 {
+      color: white;
+      letter-spacing: -10px;
     }
   }
-}
+  .carousel {
+    background-color: black;
+    .image {
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
 
+}
 section.ultra-purified {
   background-image: url("../img/bg-bottles.png");
   background-size: 100%;
   background-position: top;
+  //margin-top: 50px;
   article {
     padding-top: 98px;
     padding-bottom: 54px;
@@ -175,6 +191,7 @@ section.delivered {
         a:first-child {
           background-color: white;
           color: $purple;
+          float: left;
           &:hover {
             background-color: $purple;
             color: white;
