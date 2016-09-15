@@ -7,23 +7,19 @@ section.thing {
     z-index: 500;
     padding-top: 19.7vw;
     @media (max-width: $big-break) {
-      padding-top: 18vw;
+      padding-top: 18.7vw;
     }
     @media (max-width: $break) {
-      padding-top: 17vw;
+      padding-top: 17.7vw;
     }
     @media (max-width: $tablet) {
-      padding-top: 16vw;
+      padding-top: 180px;
     }
-    @media (max-width:$mobile) {
+    @media (max-width: $mobile) {
       padding-top: 190px;
     }
     h1 {
       color: white;
-      letter-spacing: -10px;
-      @media (max-width:$mobile) {
-        letter-spacing: -4px;
-      }
     }
   }
   .carousel {
@@ -43,12 +39,12 @@ section.ultra-purified {
   @media (max-width: $big-break) {
     background-position: center;
   }
+  @media (max-width: $mobile) {
+    background-position: 0% 25%;
+  }
   article {
     padding-top: 98px;
     padding-bottom: 54px;
-    @media (max-width: $big-break) {
-      padding-top: 76px;
-    }
     hgroup{
       text-align: center;
       div {
@@ -64,6 +60,17 @@ section.ultra-purified {
         vertical-align: middle;
         letter-spacing: -0.8px;
         margin-left: 8px;
+      }
+      h3:first-child {
+        display: none;
+        @media (max-width: $mobile) {
+          display: inline-block;
+        }
+      }
+      h3:last-child {
+        @media (max-width: $mobile) {
+          display: none;
+        }
       }
     }
     p.outside-of-the-box {
@@ -93,11 +100,6 @@ section.ultra-purified {
       text-align: center;
       padding-top: 28px;
       font-size: 1.2rem;
-      @media (max-width: $mobile) {
-        padding-left: 5%;
-        padding-right: 5%;
-        font-size: 14px;
-      }
     }
   }
 }
@@ -155,7 +157,7 @@ section.delivered {
   background-position: center;
   article {
     padding: 145px 0;
-    .purple-box {
+    div.purple-box {
       background: $purple;
       width: 100%;
       border: 5px solid white;
@@ -172,7 +174,7 @@ section.delivered {
         color: white;
         padding-top: 10px;
         padding-bottom: 18px;
-        @media (max-width: $delivered-break) {
+        @media (max-width: $mobile-br) {
           font-size: 3rem;
           padding: 20px 0;
         }
@@ -205,7 +207,7 @@ section.delivered {
           font-size: 1.4rem;
           transition: all 250ms;
           -webkit-transition: all 250ms;
-          @media (max-width: $delivered-break) {
+          @media (max-width: $mobile-br) {
             width: 100%;
           }
         }
@@ -246,16 +248,17 @@ section.instagram {
     padding-bottom: 58px;
     margin: 0 auto;
     @media (max-width: $break) {
-      padding-top: 90px;
-    }
-    @media (max-width: $mobile) {
-      margin: 0 auto;
-      padding: 0;
+      width: 85%;
+      padding-top: 75px;
+      padding-bottom: 75px;
     }
     h4 {
       text-align: center;
       span {
         font-family: "CircularBook";
+      }
+      @media (max-width: $break) {
+        padding-bottom: 20px;
       }
     }
     ul {
@@ -264,12 +267,11 @@ section.instagram {
       @media (max-width: $break) {
         padding: 5%;
       }
-      @media (max-width: $tablet) {
-        padding: 7%;
-      }
       @media (max-width: $mobile) {
         overflow: auto;
         white-space: nowrap;
+        background-color: $bg-gray;
+        padding: 0;
       }
       li {
         display: inline-block;
@@ -279,12 +281,17 @@ section.instagram {
         background-repeat: no-repeat;
         background-size: cover;
         @media (max-width: $break) {
-          width: 18vw;
-          height: 18vw;
+          width: 15vw;
+          height: 15vw;
         }
-        @media (max-width: $break) {
-          width: 18vw;
-          height: 18vw;
+        @media (max-width: $mobile) {
+          position:relative;
+          width: 100%;
+          height: 84vw;
+          margin: 0;
+          background-size: 70%;
+          background-position: center;
+
         }
         &:nth-child(1) {
           background-image: url("../img/hash-1.jpg");
@@ -321,14 +328,6 @@ section.instagram {
         }
         &:nth-child(12) {
           background-image: url("../img/hash-12.jpg");
-        }
-        @media (max-width: $mobile) {
-          position:relative;
-          width: 100%;
-          height: 90vw;
-          margin: 0 auto;
-          background-size: 70%;
-          background-position: center;
         }
       }
     }

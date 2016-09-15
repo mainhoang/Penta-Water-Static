@@ -80,7 +80,7 @@
   min-height: 1px;
 
 }
-@media (max-width:420px) {
+@media (max-width: 768px) {
   .slick-slide {
     height: 485px;
   }

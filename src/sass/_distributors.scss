@@ -33,7 +33,7 @@ section.stores {
         @media (max-width: $big-break) {
           margin: 12px auto;
         }
-        @media (max-width: $big-break) {
+        @media (max-width: $break) {
           margin: 10px auto;
         }
         &:nth-child(1) {
