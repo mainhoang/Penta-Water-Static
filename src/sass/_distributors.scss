@@ -23,22 +23,22 @@ section.stores {
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
-        //padding: 5px 0;
         vertical-align: middle;
         &:nth-child(1) {
-          background-image: url("../img/stores/whole-foods.png");
+          background-image: url("../img/stores/whole-foods.svg");
         }
         &:nth-child(2) {
-          background-image: url("../img/stores/bristol-farms.png");
+          background-image: url("../img/stores/bristol-farms.svg");
         }
         &:nth-child(3) {
           background-image: url("../img/stores/sprouts.png");
         }
         &:nth-child(4) {
-          background-image: url("../img/stores/pavilions.png");
+          background-image: url("../img/stores/pavilions.svg");
         }
         &:nth-child(5) {
-          background-image: url("../img/stores/vons.png");
+          background-image: url("../img/stores/vons.svg");
+          background-size: 50%;
         }
         &:nth-child(6) {
           background-image: url("../img/stores/earth-bar.png");
@@ -46,11 +46,6 @@ section.stores {
         &:nth-child(7) {
           background-image: url("../img/stores/vitamin-shoppe.png");
         }
-
-        // position: relative;
-        // top: 50%;
-        // transform: translateY(-50%);
-        // width: 13.7%;
       }
     }
   }

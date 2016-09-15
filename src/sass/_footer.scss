@@ -5,7 +5,7 @@ footer {
     max-width: 1290px;
     margin: 0 auto;
     color: white;
-    padding-top: 18px;
+    padding-top: 16px;
     padding-bottom: 100px;
     @media (max-width: 950px) {
       height: 910px;
@@ -79,70 +79,70 @@ footer {
             font-size: 1.0rem;
           }
           div {
-            width: 13px;
-            height: 13px;
-            background-color: white;
+            width: 14px;
+            height: 14px;
             display: inline-block;
-            margin-right: 10px;
+            margin: 4px 8px 4px 0;
             vertical-align: middle;
-
+            background-repeat: no-repeat;
+            background-position: center;
+            &#instagram {
+              background-image: url("../img/instagram-white-outline.svg");
+            }
+            &#facebook {
+              background-image: url("../img/facebook-white-outline.svg");
+            }
+            &#twitter {
+              background-image: url("../img/twitter-white-outline.svg");
+            }
           }
         }
       }
     }
-    .footer-right {
+    aside.right {
       position: absolute;
       right:0;
       display: inline-block;
-
-      @media (max-width: 950px) {
-        display: none;
+      padding-top: 8px;
+      div p {
+        color: white;
+        font-size: 1.6rem;
       }
-    }
-
-    .footer-right, .footer-mobile-signup {
-      text-align: right;
-
-      @media (max-width:950px) {
-        text-align: center;
-      }
-
-      .footer-right-inner {
-        display: inline-block;
-
-        .signup {
-          border-bottom: 1px solid white;
+      form {
+        border-bottom: 1px solid white;
+        padding-top: 4px;
+        color: white;
+        font-size: 1.6rem;
+        input {
+          padding: 10px 0;
+          background: $purple;
+          border: 0;
+          outline: none;
+          color: white;
           opacity: .5;
-          margin-top: 10px;
-
-          input {
-            width: 100%;
-            background: $purple;
-            border: 0;
-            outline: none;
-            color: white;
-
-            @media (max-width: 950px) {
-              text-align: center;
-              padding-bottom: 15px;
-            }
-
-            &::-webkit-input-placeholder {
-              color: #fff;
-            }
-            &:-moz-placeholder { /* Firefox 18- */
-              color: #fff;
-            }
-            &::-moz-placeholder {  /* Firefox 19+ */
-              color: #fff;
-            }
-            &:-ms-input-placeholder {
-              color: #fff;
-            }
+          @media (max-width: 950px) {
+            text-align: center;
+            padding-bottom: 15px;
           }
+
+          &::-webkit-input-placeholder {
+            color: #fff;
+          }
+          &:-moz-placeholder { /* Firefox 18- */
+            color: #fff;
+          }
+          &::-moz-placeholder {  /* Firefox 19+ */
+            color: #fff;
+          }
+          &:-ms-input-placeholder {
+            color: #fff;
+          }
+        }
+        input:last-child {
+          float: right;
+          opacity: 1;
         }
       }
     }
   }
-
 }
