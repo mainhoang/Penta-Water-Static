@@ -9,7 +9,7 @@ header {
   @media (max-width: $mobile) {
     height:52px;
   }
-  nav {
+  nav.main-nav {
     position: fixed;
     top:0;
     left:0;
@@ -63,7 +63,6 @@ header {
         }
       }
     }
-
     ul.right-links {
       font-family: $circularbook;
       font-size: 1.3rem;
@@ -176,7 +175,6 @@ header {
       }
     }
   }
-
   div.dropin {
     position: fixed;
     top: -100%;
@@ -185,7 +183,7 @@ header {
     height: auto;
     width:100%;
     background-color: $dropin-purple;
-    padding: 10px 30px;
+    padding: 5px 30px 10px 30px;
     transition: all 300ms ease-in;
     -webkit-transition: all 300ms ease-in;
     text-align: center;
@@ -198,19 +196,19 @@ header {
         top: 52px;
       }
     }
-    li {
-      display: block;
-      margin: 20px auto;
-      text-align: left;
-    }
     ul.top {
-      a {
-        font-family: "CircularBold";
-        font-size: 3.6rem;
-        color: white;
+      li {
+        display: block;
+        margin: 20px auto;
+        text-align: left;
+        a {
+          font-family: "CircularBold";
+          font-size: 3.6rem;
+          color: white;
+        }
       }
       li:last-child {
-        margin-top: 50px auto;
+        margin: 50px auto;
         text-align: left;
         span {
           margin: auto 10px;
@@ -221,11 +219,16 @@ header {
       }
     }
     ul.bottom {
-      a {
-        font-size: 2.6rem;
-        color: white;
-        display: inline-block;
+      li {
+        display: block;
+        margin: 30px auto;
+        text-align: left;
+        a {
+          font-size: 2.6rem;
+          color: white;
+          display: inline-block;
 
+        }
       }
       li:last-child {
         font-family: "CircularBold";

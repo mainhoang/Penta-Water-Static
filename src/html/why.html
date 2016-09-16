@@ -8,39 +8,20 @@
   <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css"/>
 </head>
 <body>
-  <div class="content-wrapper why">
+  <main class="content-wrapper why">
     {% include 'header' %}
     <div class="hero-image">
       <img src="img/faq-why-further.jpg" />
     </div>
 
-    <div class="sub-menu">
-      <div class="sub-menu-container">
-        <a href="#">
-          <div class="sub-menu-link">
-            why penta
-          </div>
-        </a>
-
-        <a href="#">
-          <div class="sub-menu-link">
-            about
-          </div>
-        </a>
-
-        <a href="/faq.html">
-          <div class="sub-menu-link">
-            FAQ
-          </div>
-        </a>
-
-        <a href="#">
-          <div class="sub-menu-link">
-            partners
-          </div>
-        </a>
-      </div>
-    </div>
+    <nav class="sub-nav">
+      <ul>
+        <li><a href="#" class="sub-menu-link">why penta</a></li>
+        <li><a href="#" class="sub-menu-link">about</a></li>
+        <li><a href="/faq.html" class="sub-menu-link">FAQ</a></li>
+        <li><a href="#" class="sub-menu-link">partners</a></li>
+      </ul>
+    </nav>
 
     <section class="row">
       <div class="content info-container">
@@ -138,7 +119,7 @@
 
     {% include 'stores' %}
     {% include 'footer' %}
-  </div>
+  </main>
 
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
