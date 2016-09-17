@@ -9,10 +9,15 @@
 </head>
 <body>
   <main class="content-wrapper why">
+
     {% include 'header' %}
-    <div class="hero-image">
-      <img src="img/faq-why-further.jpg" />
-    </div>
+
+    <section class="row hero">
+      <hgroup>
+        <h1>why penta</h1>
+      </hgroup>
+      <div class="hero-image"></div>
+    </section>
 
     <nav class="sub-nav">
       <ul>
@@ -23,79 +28,52 @@
       </ul>
     </nav>
 
-    <section class="row">
-      <div class="content info-container">
-        <div class="heading">
-          ultra-purified water
-        </div>
-        <div class="text">
-          <p>Penta is ultra-pure bottled water, period. Sourced from a natural mountain aquifer deep within Southern California's high desert, Penta utilizes a patented 13-step reverse osmosis purification process to remove more impurities than any other bottled water for perfectly pure hydration and taste. Family-owned and produced entirely with green solar engery.</p>
-
-          <p>Penta water is arsenic-free, chlorine-free, chromium 6-free, fluroide-free, MTBE-free, pharmaceutical-free and BPA/BPS-free with typical dissovled solid of less than one part per million. Naturally alkaline, Penta is simply 100% water so you can live pure.</p>
-        </div>
-      </div>
+    <section class="row first-3-articles">
+      <article class="content why-purified">
+        <h3>ultra-purified water</h3>
+        <p>Penta is ultra-pure bottled water, period. Sourced from a natural mountain aquifer deep within Southern California's high desert, Penta utilizes a patented 13-step reverse osmosis purification process to remove more impurities than any other bottled water for perfectly pure hydration and taste. Family-owned and produced entirely with green solar engery.</p>
+        <div class="why-purified-fgroup">Penta water is arsenic-free, chlorine-free, chromium 6-free, fluroide-free, MTBE-free, pharmaceutical-free and BPA/BPS-free with typical dissovled solid of less than one part per million. Naturally alkaline, <span>Penta is simply 100% water so you can live pure.</span></div>
+      </article>
+      <article class="content bottom-2">
+        <h3>family-owned</h3>
+        <p>Penta is family-owned and operated exclusively in sunny Southern California. Our family’s beverage packaging and distribution company, United Beverage, originally acquired the patented science behind Penta in 2009. It’s this patented, 13-step purification process that makes our water so unique. It takes over 11 hours to meticulously filter every drop and we proudly oversee the entire process from start to finish. The end result is our proprietary, ultra-pure water free from harmful additives, pollution and impurities.</p>
+      </article>
+      <article class="content bottom-2">
+        <h3>13 step patented process</h3>
+        <p>It's the science behind Penta that makes our water ultra-pure. In fact, Penta's filtration is so unique it's patented by the United States Patent and Trademark Office. Every bottle of Penta water undergoes a 13-step/11-hour purification process to remove more impurities than any other bottled water.</p>
+      </article>
     </section>
 
-    <section class="row">
-      <div class="content info-container">
-        <div class="heading">
-          family-owned
-        </div>
-        <div class="text">
-          <p>Penta is family-owned and operated exclusively in sunny Southern California. Our family's beverage packaging and distribution company, United Beverage, originally acquired the patented science behind Penta in 2009. It's this patented, 13-step purification process that makes our water so unique. It takes over 11 hours to meticulously filter every drop and we proudly oversee the entire process from start to finish. The end result is our proprietary, ultra-pure water free from harmful additives, pollution and impurities.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="row">
-      <div class="content info-container">
-        <div class="heading">
-          13 step patented process
-        </div>
-        <div class="text">
-          <p>It's the science behind Penta that makes our water ultra-pure. In fact, Penta's filtration is so unique it's patented by the United States Patent and Trademark Office. Every bottle of Penta water undergoes a 13-step/11-hour purification process to remove more impurities than any other bottled water.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="row">
-      <div class="content banner">
-        <div class="info">
-          <div class="image" id="micron-filtration"></div>
-          <div class="clouds-heading">micron filtration</div>
-          <div class="text">
-            pharmaceutical grade to remove volatile organic compounds and other contaminants
-          </div>
-        </div>
-        <div class="info">
-          <div class="image" id="reverse-osmosis"></div>
-          <div class="clouds-heading">reverse osmosis</div>
-          <div class="text">
-            high pressure filtration to remove salt, minerals and additional impurities
-          </div>
-        </div>
-        <div class="info">
-          <div class="image" id="deionization"></div>
-          <div class="clouds-heading">deionization</div>
-          <div class="text">
-            ion exchange to filter out remaining minerals
-          </div>
-        </div>
-        <div class="info">
-          <div class="image" id="ultraviolet-light"></div>
-          <div class="clouds-heading">ultraviolet light</div>
-          <div class="text">
-            to remove 99.99% of microorganisms
-          </div>
-        </div>
-        <div class="info">
-          <div class="image" id="ozonation"></div>
-          <div class="clouds-heading">ozonation</div>
-          <div class="text">
-            infused with ozone, a tasteless molecule made from atmospheric oxygen, to naturally sterilize
-          </div>
-        </div>
-      </div>
+    <section class="row clouds">
+      <article class="content">
+        <ul class="banner">
+          <li class="info">
+            <div class="banner-icons" id="micron-filtration"></div>
+            <h6>micron filtration</h6>
+            <p>pharmaceutical grade to remove volatile organic compounds and other contaminants</p>
+          </li>
+          <li class="info">
+            <div class="banner-icons" id="reverse-osmosis"></div>
+            <h6>reverse osmosis</h6>
+            <p>high pressure filtration to remove salt, minerals and additional impurities</p>
+          </li>
+          <li class="info">
+            <div class="banner-icons" id="deionization"></div>
+            <h6>deionization</h6>
+            <p>ion exchange to filter out remaining minerals</p>
+          </li>
+          <li class="info">
+            <div class="banner-icons" id="ultraviolet-light"></div>
+            <h6>ultraviolet light</h6>
+            <p>to remove 99.99% of microorganisms</p>
+          </li>
+          <li class="info">
+            <div class="banner-icons" id="ozonation"></div>
+            <h6>ozonation</h6>
+            <p>infused with ozone, a tasteless molecule made from atmospheric oxygen, to naturally sterilize</p>
+          </li>
+        </ul>
+      </article>
     </section>
 
     <section class="row">

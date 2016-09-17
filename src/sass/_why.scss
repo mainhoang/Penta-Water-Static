@@ -1,22 +1,81 @@
-.why, .faq {
-
-  .hero-image {
-    img {
+main.why, main.faq {
+  section.hero {
+    hgroup {
+      position: absolute;
       width: 100%;
+      z-index: 500;
+      padding-top: 9.3vw;
+      h1 {
+        font-size: 12rem;
+        letter-spacing: -6px;
+      }
+    }
+    div.hero-image {
+      width: 100%;
+      height: 28.4vw;
+      background-image: url("../img/faq-why-further.jpg");
+      background-repeat: no-repeat;
+      background-position: bottom;
+      background-size: contain;
     }
   }
-  .heading {
-    font-size: 40px;
-    color: $purple;
-    text-align: center;
-    padding-bottom: 30px;
-    font-family: 'CircularBold';
-    margin: 0 auto;
-    max-width: 720px;
 
-    @media (max-width: $mobile) {
-      padding-left: 5%;
-      padding-right: 5%;
+  section.first-3-articles {
+    padding-top: 19px;
+    article {
+      padding-top: 62px;
+      padding-bottom: 76px;
+      border-bottom: 1px solid $text-gray;
+      p {
+        width: 750px;
+        padding-top: 30px;
+        margin: auto;
+        line-height: 1.8;
+      }
+      &.why-purified {
+        p {
+          padding-bottom: 30px;
+        }
+        div.why-purified-fgroup {
+          max-width: 720px;
+          margin: auto;
+          color: $text-gray;
+          font-size: 1.2rem;
+          text-align: center;
+          line-height: 2;
+          span {
+            color: $purple;
+          }
+        }
+      }
+      &.bottom-2 {
+        p {
+          max-width: 710px;
+          font-size: 1.5rem;
+        }
+      }
+    }
+    article:last-child {
+      padding-bottom: 60px;
+      border-bottom: none;
+    }
+  }
+
+  section.clouds {
+    article {
+      padding: 98px 0;
+      li{
+        width: 17.5%;
+        h6 {
+          padding-top: 10px;
+        }
+        p {
+          width: 70%;
+
+          font-size: 1.1rem;
+          line-height: 1.5em;
+        }
+      }
     }
   }
 
