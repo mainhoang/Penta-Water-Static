@@ -30,6 +30,7 @@ section.stores {
         background-position: center;
         background-size: contain;
         vertical-align: middle;
+        opacity: 0.2;
         @media (max-width: $big-break) {
           margin: 12px auto;
         }
@@ -38,25 +39,31 @@ section.stores {
         }
         &:nth-child(1) {
           background-image: url("../img/stores/whole-foods.svg");
+          background-size: 45%;
         }
         &:nth-child(2) {
           background-image: url("../img/stores/bristol-farms.svg");
+          background-size: 85%;
         }
         &:nth-child(3) {
-          background-image: url("../img/stores/sprouts.png");
+          background-image: url("../img/stores/sprouts-logo.svg");
+          background-size: 60%;
         }
         &:nth-child(4) {
-          background-image: url("../img/stores/pavilions.svg");
+          background-image: url("../img/stores/vons.svg");
+          background-size: 45%;
         }
         &:nth-child(5) {
-          background-image: url("../img/stores/vons.svg");
-          background-size: 50%;
+          background-image: url("../img/stores/pavilions.svg");
+          background-size: 80%;
         }
         &:nth-child(6) {
-          background-image: url("../img/stores/earth-bar.png");
+          background-image: url("../img/stores/earthbar.svg");
+          background-size: 60%;
         }
         &:nth-child(7) {
-          background-image: url("../img/stores/vitamin-shoppe.png");
+          background-image: url("../img/stores/thevitaminshoppe.svg");
+          background-size: 85%;
         }
       }
     }

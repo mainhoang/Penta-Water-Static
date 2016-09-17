@@ -1,3 +1,21 @@
+section.clouds {
+  //background-image: url('../img/clouds.jpg');
+  background-size: cover;
+  background-position: center;
+  article {
+    width: 100%;
+    max-width: 1440px;
+    @media (max-width: $tablet) {
+      width: 85%;
+    }
+    li{
+      width: 23%;
+    }
+    h6, p {
+      color: white;
+    }
+  }
+}
 ul.banner {
   height: 100%;
   text-align: center;
@@ -26,12 +44,29 @@ ul.banner {
     &#no-additives-purple {
       background-image: url('../img/purp-no-additives.png');
     }
+    &#micron-filtration {
+      background-image: url('../img/micron.png');
+    }
+    &#reverse-osmosis {
+      background-image: url('../img/reverse.png');
+    }
+
+    &#deionization {
+      background-image: url('../img/deionization.png');
+    }
+
+    &#ultraviolet-light {
+      background-image: url('../img/ultraviolet.png');
+    }
+
+    &#ozonation {
+      background-image: url('../img/ozonation.png');
+    }
   }
   li.info {
     display: inline-block;
-    width: 32.9%;
     text-align: center;
-    position: relative;
+    vertical-align: top;
     @media (max-width: $mobile-br) {
       width: 70%;
       padding-bottom: 40px;
@@ -39,9 +74,9 @@ ul.banner {
     h6 {
       padding-top: 16px;
     }
-    p.banner-text {
+    p {
       width: 80%;
-      padding-top: 9px;
+      padding-top: 10px;
       margin: 0 auto;
       color: white;
       font-size: 1.3rem;
@@ -55,59 +90,6 @@ ul.banner {
     @media (max-width: $mobile-br) {
       width: 70%;
       padding-bottom: 0;
-    }
-  }
-}
-
-
-.index {
-  .banner {
-    .info {
-
-
-      .image {
-        &#patented-process {
-          background-image: url('../img/patent-process-icon.png');
-        }
-
-        &#natural-ph {
-          background-image: url('../img/natural-ph-icon.png');
-        }
-
-        &#no-additives {
-          background-image: url('../img/no-additives-icon.png');
-        }
-      }
-    }
-  }
-}
-
-.why {
-  .banner {
-    .info {
-      width: 19%;
-
-      .image {
-        &#micron-filtration {
-          background-image: url('../img/micron.png');
-        }
-
-        &#reverse-osmosis {
-          background-image: url('../img/reverse.png');
-        }
-
-        &#deionization {
-          background-image: url('../img/deionization.png');
-        }
-
-        &#ultraviolet-light {
-          background-image: url('../img/ultraviolet.png');
-        }
-
-        &#ozonation {
-          background-image: url('../img/ozonation.png');
-        }
-      }
     }
   }
 }
