@@ -1,4 +1,16 @@
 main.home {
+  section.home-purified .content,  section.naturally-balanced .content, section.delivered .content {
+    @media (max-width: $break) {
+      width: 72%;
+      min-width: 275px;
+      padding-top: 75px;
+      padding-bottom: 75px;
+    }
+    @media (max-width: $mobile) {
+      width: 80%;
+      min-width: 275px;
+    }
+  }
   section.thing {
     position: relative;
     z-index: 50;
@@ -49,12 +61,15 @@ main.home {
       padding-bottom: 54px;
       hgroup{
         text-align: center;
-        div {
+        //width: 550px;
+        margin: auto;
+
+        div.watermark {
           display: inline-block;
           width: 100px;
           height: 100px;
-          background-image: url("../img/13-step.svg");
-          background-repeat: no-repeat;
+          //background-image: url("../img/13-step.svg");
+          //background-repeat: no-repeat;
           vertical-align: middle;
           @media (max-width: $mobile) {
             margin: 30px auto;
@@ -65,11 +80,13 @@ main.home {
           vertical-align: middle;
           letter-spacing: -0.8px;
           margin-left: 8px;
+          padding: 27px 0;
         }
         h3:first-child {
           display: none;
           @media (max-width: $mobile) {
             display: inline-block;
+            padding: 0;
           }
         }
         h3:last-child {
@@ -112,8 +129,15 @@ main.home {
   section.clouds {
     article {
       padding: 78px 0;
-      li{
+      li {
         width: 23%;
+        @media (max-width: $tablet) {
+          width: 30%;
+        }
+        @media (max-width: $mobile-br) {
+          width: 70%;
+          padding-bottom: 40px;
+        }
         p {
           width: 80%;
           padding-top: 9px;
