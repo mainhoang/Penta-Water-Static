@@ -1,235 +1,295 @@
-.product {
-  .product-container {
-    max-width: 1200px;
+main.product {
+  section.order {
+    width: 75%;
+    max-width: 1015px;
     margin: 0 auto;
     text-align: center;
-    padding-top: 100px;
-    padding-bottom: 50px;
-
+    margin-top: 5vw;
+    //margin-bottom: 3.9vw;
+    background-image: url("../img/product-bg.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 16.7%;
+    //height: 37vw;
+    height: 40.8vw;
     @media (max-width: $mobile) {
       padding-bottom: 0;
     }
-    .column {
+    /*zdiv.column {
       width: 32.4%;
       display: inline-block;
       font-family: $circularbook;
       vertical-align: top;
-
+      text-align: left;
       @media (max-width: $mobile) {
         width: 100%;
         padding-bottom: 60px;
         padding-left: 5%;
         padding-right: 5%;
       }
-
-      .watermark {
-        text-align: left;
-
+    }*/
+    aside.info {
+      float:left;
+      width: 30%;
+      div.watermark {
+        margin-top: 2.2vw;
+        margin-bottom: 0.3vw;
+        width: 86px;
+        height: 86px;
         @media (max-width: $mobile) {
           text-align: center;
           padding-bottom: 30px;
         }
-
-        img {
-          display: block;
-
-          @media (max-width: $mobile) {
-            margin: 0 auto;
-          }
-        }
       }
-
       a {
+        font-size: 1.3rem;
         color: $text-gray;
+        text-decoration: underline;
       }
-
       a[data-readmore-toggle] {
         color: $purple;
-        font-size: 13px;
-        padding: 15px 0;
+        font-size: 1.3rem;
+        padding: 14px 0;
+        text-decoration: none;
       }
-
-      .product-info {
+      div.product-info {
+        float: left;
         text-align: left;
         width: 280px;
-
         @media (max-width: $mobile) {
           margin: 0 auto;
           text-align: center;
         }
-        h1 {
-          color: $purple;
-          font-size: 40px;
-          padding-bottom: 20px;
+        h4 {
+          text-align: left;
+          padding: 10px 0 20px 0;;
         }
-
-        .about-text {
-          color: $text-gray;
-          font-size: 14px;
+        p.about-text {
+          font-size: 1.5rem;
+          text-align: left;
+          line-height: 1.6;
         }
-      }
-
-      .product-image {
-        width: 50%;
-        margin: 0 auto;
-        img {
-          width: 140px;
-
-          @media (max-width: $mobile) {
-            width: 50%;
-          }
-        }
-      }
-
-      .buy-outer {
-        text-align: left;
-        border: 2px solid $text-gray;
-
-        .buy-inner {
-          padding: 25px 25px 0 25px;
-
-          .name {
+        div.reviews {
+          padding: 8px 0;
+          div.star-ratings {
+            display: inline-block;
             color: $purple;
+            font-size:16px;
+            height: 16px;
+            width: 86px;
           }
+          div.review-count {
+            display: inline-block;
+            color: $text-gray;
+            font-size: 1.4rem;
+          }
+          a {
+            color: $purple;
+            padding-top: 8px;
+          }
+        }
+      }
+    }
 
-          .dropdowns {
-            select {
-              display: block;
-              border: 0;
-              margin: 20px 0;
-              background: $light-purple;
-              height: 40px;
-              width: 100%;
-              color: $purple;
-              font-weight: bold;
-
-              &.volume {
-                color: $text-gray;
-                font-weight: normal;
+    aside.buy {
+      float:right;
+      width:33.8rem;
+      height: 44.1rem;
+      margin: 3.6vw auto;
+      text-align: left;
+      border: 2px solid $text-gray;
+      form {
+        padding: 3rem 3.5rem;
+        h5 {
+          text-align: left;
+          padding-bottom: 0.8rem;
+        }
+        div.dropdown-wrapper {
+          background-color: $bg-gray;
+          width: 100%;
+          height: 4.2rem;
+          margin: 1.2rem 0;
+          select:focus {
+            outline: none;
+            box-shadow: none !important;
+          }
+          select {
+            display: block;
+            border: 0;
+            //background: $bg-gray;
+            height: 4.2rem;
+            width: 70%;
+            color: $purple;
+            font-weight: bold;
+            float: right;
+            &.top {
+              width: 63%;
+            }
+            option span {
+              color: $text-gray;
+              font-weight: normal;
+            }
+          }
+        }
+        div.radio-wrapper {
+          //padding-top: 0.4rem;
+          p {
+            font-family: "CircularBold";
+            color: $purple;
+            font-size: 1.4rem;
+            padding: 0.4rem 0;
+            text-align: left;
+          }
+          ul {
+            li {
+              padding: 0.5rem 0;
+              color: $text-gray;
+              font-size: 1.4rem;
+              span {
+                color: $red;
+                font-style: italic;
+                font-size: 1rem;
+              }
+              input[type=radio]{
+                position:absolute;
+                visibility: hidden;
+                z-index: 15;
+              }
+              input[type=radio]:checked ~ .check::before{
+                background: $purple;
+              }
+              input[type=radio]:checked ~ label{
+                color: $purple;
+              }
+              label{
+                display: inline-block;
+                font-size: 1.2rem;
+                vertical-align: top;
+                cursor: pointer;
+                transition: all 0.25s ease-in;
+              }
+              div.check{
+                display: inline-block;
+                //position: absolute;
+                border: 1px solid $text-gray;
+                border-radius: 100%;
+                height: 10px;
+                width: 10px;
+                top: 0px;
+                left: 0px;
+                z-index: 10;
+                transition: border .25s linear;
+              }
+              div.check::before {
+                display: block;
+                position: absolute;
+                content: '';
+                border-radius: 100%;
+                height: 6px;
+                width: 6px;
+                top: 1px;
+                left: 1px;
+                transition: background 0.25s ease-in;
               }
             }
           }
-
-          .delivered {
+        }
+        div.button-wrapper {
+          margin-top: 20px;
+          label {
+            width: 100%;
             color: $purple;
-            font-size: 14px;
-            font-weight: bold;
-            padding-bottom: 10px;
-          }
-
-          .delivery {
-            color: $text-gray;
-            font-size: 12px;
-
-            input[type="radio"] {
-              margin-right: 10px;
-            }
-          }
-
-          .price-shipping {
-            margin-top: 10px;
-            .price {
-              color: $purple;
-              font-size: 20px;
-              display: inline-block;
-            }
-
-            .shipping {
+            font-size: 2.4rem;
+            display: block;
+            span {
               color: $text-gray;
-              font-size: 12px;
+              font-size: 1.2rem;
               display: inline-block;
               position: absolute;
-              top: 7px;
+              bottom: 0;
               right: 0;
             }
-
-            button {
-              width: 100%;
-              border: 0;
-              background: $purple;
-              color: white;
-              font-weight: bold;
-              font-size: 14px;
-              padding: 10px 0;
-              margin-top: 10px;
-            }
+          }
+          button {
+            width: 100%;
+            border: 0;
+            background: $purple;
+            color: white;
+            font-weight: bold;
+            font-size: 1.4rem;
+            padding: 1.2rem 0;
+            margin-top: 2.2rem;
           }
         }
-
-        a {
-          padding: 0;
-
-          &:hover {
-            .water-amount {
-              color: white;
-              background: $purple;
-            }
-          }
-        }
-
-        .water-amount {
+      }
+      a {
+        div.buy-fgroup {
           background: $light-purple;
           color: $purple;
           text-align: center;
-          font-size: 14px;
-          margin-top: 20px;
-          padding: 20px 0;
+          font-size: 1.3rem;
+          padding: 1.4rem 0;
           transition: all 250ms;
           -webkit-transition: all 250ms;
+        }
+        &:hover {
+          .buy-fgroup {
+            color: white;
+            background: $purple;
+          }
         }
       }
     }
   }
 
-  .ocean-image {
+  section.gray-banner {
+    background-color: $bg-gray;
+    article {
+      padding: 4vw 0;
+      width: 74%;
+      max-width: 1065px;
+      li {
+        width: 32%;
+        p {
+         color: $text-gray;
+        }
+      }
+    }
+  }
+
+  section.hydration-calculator {
     background-image: url('../img/penta-beach.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 450px;
+    padding: 9.6vw 0;
 
-    .hydration-calculator {
-      position: relative;
-      top: 50%;
-      transform: translateY(-50%);
-      padding: 40px 0px;
-      font-family: $circularbook;
-      max-width: 460px;
+    div.calculator-wrapper {
+      //top: 50%;
+      //transform: translateY(-50%);
+      padding: 43px 0px 53px 0;
+      max-width: 442px;
       margin: 0 auto;
-      background: white;
-
+      background-color: white;
       @media (max-width: $mobile) {
         padding: 50px 5%;
         max-width: 95%;
       }
-
-      .hydration-calculator-inner {
-        text-align: center;
-        color: $purple;
+      hgroup {
         max-width: 300px;
         margin: 0 auto;
-
-        .text {
-          margin-bottom: 20px;
-          font-size: 20px;
-          font-weight: bold;
-        }
-
-        .info {
-          margin-bottom: 15px;
+        p {
+          margin: 10px auto 5px auto;
           font-size: 14px;
-          line-height: 1.5em;
-          color: $text-gray;
         }
-
         input[type="text"] {
           border: 0;
+          font-size: 1.4rem;
           border-bottom: 1px solid $text-gray;
           outline: none;
           width: 100%;
           text-align: center;
-          padding-bottom: 10px;
-
+          padding: 8px;
           &::-webkit-input-placeholder {
             color: $purple;
           }

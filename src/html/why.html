@@ -13,10 +13,11 @@
     {% include 'header' %}
 
     <section class="row hero">
-      <hgroup>
-        <h1>why penta</h1>
-      </hgroup>
-      <div class="hero-image"></div>
+      <div class="hero-image">
+        <hgroup>
+          <h1>why penta</h1>
+        </hgroup>
+      </div>
     </section>
 
     <nav class="sub-nav">
@@ -33,12 +34,10 @@
         <h3>ultra-purified water</h3>
         <p>Penta is ultra-pure bottled water, period. Sourced from a natural mountain aquifer deep within Southern California's high desert, Penta utilizes a patented 13-step reverse osmosis purification process to remove more impurities than any other bottled water for perfectly pure hydration and taste. Family-owned and produced entirely with green solar engery.</p>
         <div class="why-purified-fgroup">Penta water is arsenic-free, chlorine-free, chromium 6-free, fluroide-free, MTBE-free, pharmaceutical-free and BPA/BPS-free with typical dissovled solid of less than one part per million. Naturally alkaline, <span>Penta is simply 100% water so you can live pure.</span></div>
-      </article>
-      <article class="content bottom-2">
+        <hr>
         <h3>family-owned</h3>
         <p>Penta is family-owned and operated exclusively in sunny Southern California. Our family’s beverage packaging and distribution company, United Beverage, originally acquired the patented science behind Penta in 2009. It’s this patented, 13-step purification process that makes our water so unique. It takes over 11 hours to meticulously filter every drop and we proudly oversee the entire process from start to finish. The end result is our proprietary, ultra-pure water free from harmful additives, pollution and impurities.</p>
-      </article>
-      <article class="content bottom-2">
+        <hr>
         <h3>13 step patented process</h3>
         <p>It's the science behind Penta that makes our water ultra-pure. In fact, Penta's filtration is so unique it's patented by the United States Patent and Trademark Office. Every bottle of Penta water undergoes a 13-step/11-hour purification process to remove more impurities than any other bottled water.</p>
       </article>
@@ -76,24 +75,27 @@
       </article>
     </section>
 
-    <section class="row">
-      <div class="content info-container">
-        <div class="heading">
-          naturally balanced <strong>pH</strong>
+    <section class="row continued">
+      <article class="content">
+        <p>The end result is an ultra-purified water that is arsenic-free, chlorine-free, chromium 6-free, fluoride-free, MTBE-free, pharmaceutical-free and BPA/BPS- free with typical dissolved solids of less than one part per million.
+        <a href="#">Please see our water quality report for additional information.</a></p>
+        <hr>
+        <h3>naturally balanced <span>pH</span></h3>
+        <p>The optimal pH range for our bodies is between 7.35 and 7.45. Only when our body's pH level is within this range can we effectively assimilate the vitamins, minerals, and food supplements we need to survive. More and more health conscious consumers are becoming aware of the harmful effects of an acidic diet and are seeking solutions to bring their body fluids within an acceptable range.</p>
+        <div class="ph-scale">
+          <img src="../img/why-scale.png" />
         </div>
-        <div class="text">
-          <p>The optimal pH range for our bodies is between 7.35 and 7.45. Only when our body's pH level is within this range can we effectively assimilate the vitamins, minerals, and food supplements we need to survive. More and more health conscious consumers are becoming aware of the harmful effects of an acidic diet and are seeking solutions to bring their body fluids within an acceptable range.</p>
-
-          <div class="ph-scale">
-            <img src="img/ph-scale.jpg" />
-          </div>
-        </div>
-      </div>
+      </article>
     </section>
 
-    <div class="bottom-image">
-      <img src="img/bottled-cropped.jpg" />
-    </div>
+    <section class="row bottled-solar">
+      <div class="wrapper">
+        <article class="content">
+          <h3>bottled with solar energy</h3>
+          <p>We proudly source and bottle Penta in sunny Southern California. In fact, we utilize our climate’s sunny disposition to power the entire purification and bottling process here at Penta. That’s right, Penta is 100% powered by sunshine! By harnessing the sun’s natural energy and transforming it into clean, green electricity, we are helping to protect our environment. Solar energy is not only sustainable, it’s the world’s most abundant renewable energy source. In fact, each year our facility harnesses enough solar energy to...</p>
+        </article>
+      </div>
+    </section>
 
     {% include 'stores' %}
     {% include 'footer' %}
@@ -101,7 +103,8 @@
 
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script type="text/javascript" src="js/slick/slick.min.js"></script>
-  <script src="js/main.js"></script>
+  <script type="text/javascript" src="./js/slick/slick.min.js"></script>
+  <script type="text/javascript" src="./js/readmore.min.js"></script>
+  <script type="text/javascript" src="./js/main.js"></script>
 </body>
 </html>

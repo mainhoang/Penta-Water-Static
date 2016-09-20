@@ -8,131 +8,117 @@
   <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css"/>
 </head>
 <body>
-  <div class="content-wrapper product">
+  <main class="product">
+
     {% include 'header' %}
-    <div class="product-container">
-      <div class="column">
-        <div class="watermark">
-          <img src="img/13-step.png" />
-          <a href="#">learn more</a>
-        </div>
 
+    <section class="order">
+
+      <aside class="info">
+        <div class="watermark"></div>
+        <a href="#">learn more</a>
         <div class="product-info">
-          <h1>ultra purified water</h1>
-          <div class="about-text">
-            Penta water is arsenic-free, chlorine-free, chromium 6-free, fluoride-free with less than 1ppm* total dissolved solids. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco
+          <h4>ultra purified water</h4>
+          <p class="about-text">Penta water is arsenic-free, chlorine-free, chromium 6-free, fluoride-free, MTBE-free and pharmaceutical-free with less than 1ppm* total dissolved solids.<br/>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </p>
+          <hr>
+          <div class="reviews">
+            <div class="star-ratings">★★★★★</div>
+            <div class="review-count">(432)</div>
+            <a href="#">read reviews</a>
           </div>
-          <div class="rating"></div>
-          <div class="review-count">(432)</div>
-          <a href="#">read reviews</a>
         </div>
-      </div>
+      </aside>
 
-      <div class="column">
-        <div class="product-image">
-          <img src="img/product-bg.png" />
-        </div>
-      </div>
+      <aside class="buy">
 
-      <div class="column">
-        <div class="buy-outer">
-          <div class="buy-inner">
-            <div class="name">
-              penta water
-            </div>
-
-            <div class="dropdowns">
-              <select>
-                <option value="bottle">0.5 L bottle <span class="volume">24 / case</span></option>
-                <option value="bottle">0.5 L bottle <span class="volume">24 / case</span></option>
-                <option value="bottle">0.5 L bottle <span class="volume">24 / case</span></option>
-                <option value="bottle">0.5 L bottle <span class="volume">24 / case</span></option>
-              </select>
-
-              <select>
-                <option value="case">1 case</option>
-                <option value="case">1 case</option>
-                <option value="case">1 case</option>
-                <option value="case">1 case</option>
-              </select>
-            </div>
-
-            <div class="delivery">
-              <div class="delivered">
-                delivered
-              </div>
-              <input type="radio" name="delivery">every 30 days (save 20%)<br>
-              <input type="radio" name="delivery" checked>just once ($34.95)
-            </div>
-
-            <div class="price-shipping">
-              <div class="price">
-                $34.95
-              </div>
-
-              <div class="shipping">
-                ships today
-              </div>
-
-              <button type="button">
-                add to cart
-              </button>
-            </div>
+        <form>
+          <h5>penta water</h5>
+          <div class="dropdown-wrapper">
+            <select class="top">
+              <option value="size">0.5 L bottle</option>
+              <option value="size">1 L bottle</option>
+              <option value="size">1.5 L bottle</option>
+              <option value="size">2 L bottle</option>
+            </select>
           </div>
-
-          <a href="#">
-            <div class="water-amount">
-              see how much water you should be drinking >
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <div class="info-container banner">
-      <div class="info">
-        <div class="image" id="patented-process-purple"></div>
-        <div class="heading">patented process</div>
-        <div class="text">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-        </div>
-      </div>
-      <div class="info">
-        <div class="image" id="natural-ph-purple"></div>
-        <div class="heading">natural pH</div>
-        <div class="text">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-        </div>
-      </div>
-      <div class="info">
-        <div class="image" id="no-additives-purple"></div>
-        <div class="heading">no additives</div>
-        <div class="text">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-        </div>
-      </div>
-    </div>
-
-    <div class="ocean-image">
-      <div class="hydration-calculator">
-        <div class="hydration-calculator-inner">
-          <div class="text">
-            hydration calculator
+          <div class="dropdown-wrapper">
+            <select>
+              <option value="quantity">1 case <span>(24 bottles)</span></option>
+              <option value="quantity">1 case <span>(24 bottles)</span></option>
+              <option value="quantity">1 case <span>(24 bottles)</span></option>
+              <option value="quantity">1 case <span>(24 bottles)</span></option>
+            </select>
           </div>
-
-          <div class="info">
-            see how much water you should be drinking
+          <div class="radio-wrapper">
+            <p>delivered</p>
+            <ul>
+              <li>
+                <input type="radio" id="radio-subscribe" name="selector" checked>
+                <div class="check"></div>
+                <label for="radio-subscribe">every 30 days - $29.95/case <span>save $7.00 (15%)</span></label>
+              </li>
+              <li>
+                <input type="radio" id="radio-one-time" name="selector">
+                <div class="check"></div>
+                <label for="radio-one-time">just once - $36.95/case</label>
+              </li>
+            </ul>
           </div>
+          <div class="button-wrapper">
+            <label for="add-to-cart">$34.95<span>ships today</span></label>
+            <button type="submit">add to cart</button>
+          </div>
+        </form>
 
+        <a href="#">
+          <div class="buy-fgroup">see how much water you should be drinking ></div>
+        </a>
+
+      </aside>
+
+    </section>
+
+    <section class="row gray-banner">
+      <article class="content">
+        <ul class="banner">
+          <li class="info">
+            <div class="banner-icons" id="patented-process-purple"></div>
+            <h6>patented process</h6>
+            <p class="banner-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            </p>
+          </li>
+          <li class="info">
+            <div class="banner-icons" id="natural-ph-purple"></div>
+            <h6>natural pH</h6>
+            <p class="banner-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            </p>
+          </li>
+          <li class="info">
+            <div class="banner-icons" id="no-additives-purple"></div>
+            <h6>no additives</h6>
+            <p class="banner-text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            </p>
+          </li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="hydration-calculator">
+      <div class="calculator-wrapper">
+        <hgroup>
+          <h5>hydration calculator</h5>
+          <p>see how much water you should be drinking</p>
           <input type="text" placeholder="enter your body weight">
-        </div>
+        </hgroup>
       </div>
-    </div>
+    </section>
 
     {% include 'footer' %}
-  </div>
+  </main>
 
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
