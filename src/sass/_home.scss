@@ -31,10 +31,9 @@ main.home {
       @media (max-width: $mobile) {
         padding-top: 190px;
       }
-      h1 {
-        color: white;
-        letter-spacing: -10px;
-      }
+    }
+    h1 {
+      letter-spacing: -10px;
     }
     .carousel {
       background-color: black;
