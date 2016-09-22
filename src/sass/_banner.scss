@@ -17,7 +17,7 @@ ul.banner {
   height: 100%;
   text-align: center;
   div.banner-icons {
-    height: 50px;
+    height: 56px;
     width: 50px;
     background-repeat: no-repeat;
     background-position: center;
@@ -34,14 +34,13 @@ ul.banner {
       background-image: url('../img/no-additives-icon.svg');
     }
     &#patented-process-purple {
-      background-image: url('../img/purp-patent-process.png');
-      width: 56px;
+      background-image: url('../img/purp-patent-process.svg');
     }
     &#natural-ph-purple {
-      background-image: url('../img/purp-natural-ph.png');
+      background-image: url('../img/purp-natural-ph.svg');
     }
     &#no-additives-purple {
-      background-image: url('../img/purp-no-additives.png');
+      background-image: url('../img/purp-no-additives.svg');
     }
     &#micron-filtration {
       background-image: url('../img/micron.png');

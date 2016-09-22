@@ -12,15 +12,16 @@
 
     {% include 'header' %}
 
-    <section class="order">
+    <section class="row order">
+      <article class="order-wrapper">
 
       <aside class="info">
         <div class="watermark"></div>
-        <a href="#">learn more</a>
-        <div class="product-info">
+
+        <div class="about">
+          <a href="#" class="learn">learn more</a>
           <h4>ultra purified water</h4>
-          <p class="about-text">Penta water is arsenic-free, chlorine-free, chromium 6-free, fluoride-free, MTBE-free and pharmaceutical-free with less than 1ppm* total dissolved solids.<br/>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </p>
+          <p class="about-text">Penta water is arsenic-free, chlorine-free, chromium 6-free, fluoride-free, MTBE-free and pharmaceutical-free with less than 1ppm* total dissolved solids.</p>
           <hr>
           <div class="reviews">
             <div class="star-ratings">★★★★★</div>
@@ -30,13 +31,14 @@
         </div>
       </aside>
 
-      <aside class="buy">
+      <aside class="img"></aside>
 
+      <aside class="buy">
         <form>
           <h5>penta water</h5>
           <div class="dropdown-wrapper">
             <select class="top">
-              <option value="size">0.5 L bottle</option>
+              <option value="size">500ml bottle</option>
               <option value="size">1 L bottle</option>
               <option value="size">1.5 L bottle</option>
               <option value="size">2 L bottle</option>
@@ -56,27 +58,41 @@
               <li>
                 <input type="radio" id="radio-subscribe" name="selector" checked>
                 <div class="check"></div>
-                <label for="radio-subscribe">every 30 days - $29.95/case <span>save $7.00 (15%)</span></label>
+                <label for="radio-subscribe">
+                  <span class="mobile">deliver</span>
+                  every 30 days<span class="hide"> - $29.95/case
+                  <span class="red-text">save $7.00 (15%)</span></span>
+                  <span class="mobile gray-text"><br/>save 15%</span>
+                </label>
               </li>
               <li>
                 <input type="radio" id="radio-one-time" name="selector">
                 <div class="check"></div>
-                <label for="radio-one-time">just once - $36.95/case</label>
+                <label for="radio-one-time">
+                  <span class="mobile">deliver</span>
+                  just once<span class="hide"> - $36.95/case</span>
+                  <span class="mobile gray-text"><br/>($36.95)</span>
+                </label>
               </li>
             </ul>
           </div>
           <div class="button-wrapper">
-            <label for="add-to-cart">$34.95<span>ships today</span></label>
+            <div class="price">$34.95<span>ships today</span></div>
             <button type="submit">add to cart</button>
           </div>
         </form>
 
-        <a href="#">
-          <div class="buy-fgroup">see how much water you should be drinking ></div>
-        </a>
+        <div class="buy-fgroup">
+          <a href="#">see how much water you should be drinking ></a>
+        </div>
 
       </aside>
+      <div class="mobile-info">
+        <h4>ultra purified water</h4>
+        <p>Penta water is arsenic-free, chlorine-free, chromium 6-free, fluoride-free, MTBE-free and pharmaceutical-free with less than 1ppm* total dissolved solids.<a href="#">read more...</a></p>
+      </div>
 
+    </article>
     </section>
 
     <section class="row gray-banner">

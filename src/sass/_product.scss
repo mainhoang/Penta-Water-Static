@@ -1,241 +1,459 @@
 main.product {
   section.order {
-    width: 75%;
-    max-width: 1015px;
-    margin: 0 auto;
-    text-align: center;
-    margin-top: 5vw;
-    //margin-bottom: 3.9vw;
-    background-image: url("../img/product-bg.png");
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: 16.7%;
-    //height: 37vw;
-    height: 40.8vw;
-    @media (max-width: $mobile) {
-      padding-bottom: 0;
-    }
-    /*zdiv.column {
-      width: 32.4%;
-      display: inline-block;
-      font-family: $circularbook;
-      vertical-align: top;
-      text-align: left;
+    article.order-wrapper {
+      width: 80%;
+      max-width: 1040px;
+      margin: 0 auto;
+      padding: 5vw 0 3.7vw 0;
+      text-align: center;
+      @media (max-width: $desk-br) {
+        padding: 4vw 0;
+        width: 82.5%;
+      }
+      @media (max-width: $break) {
+        padding: 3vw 0;
+        width: 85%;
+      }
+      @media (max-width: $tablet) {
+        padding: 7vw 0 0 0;
+        width: 75%;
+      }
       @media (max-width: $mobile) {
         width: 100%;
-        padding-bottom: 60px;
-        padding-left: 5%;
-        padding-right: 5%;
+        padding-top: 22px;
       }
-    }*/
-    aside.info {
-      float:left;
-      width: 30%;
-      div.watermark {
-        margin-top: 2.2vw;
-        margin-bottom: 0.3vw;
-        width: 86px;
-        height: 86px;
+      aside.info, aside.img, aside.buy {
+        display: inline-block;
+        vertical-align: top;
+      }
+      aside.info {
+        width: 30%;
+        @media (max-width: $desk-br) {
+          width: 25%;
+          vertical-align: middle;
+        }
+        @media (max-width: $tablet) {
+          width: 40%;
+          vertical-align: top;
+        }
+        @media (max-width: $mobile-br) {
+          vertical-align: middle;
+        }
         @media (max-width: $mobile) {
-          text-align: center;
-          padding-bottom: 30px;
+          display: none;
         }
-      }
-      a {
-        font-size: 1.3rem;
-        color: $text-gray;
-        text-decoration: underline;
-      }
-      a[data-readmore-toggle] {
-        color: $purple;
-        font-size: 1.3rem;
-        padding: 14px 0;
-        text-decoration: none;
-      }
-      div.product-info {
-        float: left;
-        text-align: left;
-        width: 280px;
-        @media (max-width: $mobile) {
-          margin: 0 auto;
-          text-align: center;
-        }
-        h4 {
-          text-align: left;
-          padding: 10px 0 20px 0;;
-        }
-        p.about-text {
-          font-size: 1.5rem;
-          text-align: left;
-          line-height: 1.6;
-        }
-        div.reviews {
-          padding: 8px 0;
-          div.star-ratings {
-            display: inline-block;
-            color: $purple;
-            font-size:16px;
-            height: 16px;
-            width: 86px;
+        div.watermark {
+          margin-top: 2.2vw;
+          margin-bottom: 0.3vw;
+          width: 86px;
+          height: 86px;
+          @media (max-width: $desk-br) {
+            margin-top: 0;
           }
-          div.review-count {
-            display: inline-block;
-            color: $text-gray;
-            font-size: 1.4rem;
-          }
-          a {
-            color: $purple;
-            padding-top: 8px;
+          @media (max-width: $mobile-br) {
+            display: none;
           }
         }
-      }
-    }
-
-    aside.buy {
-      float:right;
-      width:33.8rem;
-      height: 44.1rem;
-      margin: 3.6vw auto;
-      text-align: left;
-      border: 2px solid $text-gray;
-      form {
-        padding: 3rem 3.5rem;
-        h5 {
+        div.about {
+          display: inline-block;
           text-align: left;
-          padding-bottom: 0.8rem;
-        }
-        div.dropdown-wrapper {
-          background-color: $bg-gray;
           width: 100%;
-          height: 4.2rem;
-          margin: 1.2rem 0;
-          select:focus {
-            outline: none;
-            box-shadow: none !important;
-          }
-          select {
-            display: block;
-            border: 0;
-            //background: $bg-gray;
-            height: 4.2rem;
-            width: 70%;
-            color: $purple;
-            font-weight: bold;
-            float: right;
-            &.top {
-              width: 63%;
-            }
-            option span {
-              color: $text-gray;
-              font-weight: normal;
-            }
-          }
-        }
-        div.radio-wrapper {
-          //padding-top: 0.4rem;
-          p {
-            font-family: "CircularBold";
-            color: $purple;
-            font-size: 1.4rem;
-            padding: 0.4rem 0;
+          padding: 0 1.2rem;
+          a {
             text-align: left;
+            font-size: 1.3rem;
+            color: $text-gray;
+            text-decoration: underline;
+            &.learn {
+              @media (max-width: $mobile-br) {
+                display: none;
+              }
+            }
           }
-          ul {
-            li {
-              padding: 0.5rem 0;
+          a[data-readmore-toggle] {
+            color: $purple;
+            font-size: 1.3rem;
+            padding: 14px 0;
+            text-decoration: none;
+          }
+          h4 {
+            text-align: left;
+            padding: 10px 0 20px 0;
+            @media (max-width: $desk-br) {
+              font-size: 3.75rem;
+            }
+            @media (max-width: $break) {
+              font-size: 3.5rem;
+            }
+            @media (max-width: $tablet) {
+              font-size: 4rem;
+            }
+          }
+          p.about-text {
+            font-size: 1.5rem;
+            text-align: left;
+            line-height: 1.6;
+          }
+          div.reviews {
+            padding: 8px 0;
+            div.star-ratings {
+              display: inline-block;
+              color: $purple;
+              font-size:16px;
+              height: 16px;
+              width: 86px;
+            }
+            div.review-count {
+              display: inline-block;
               color: $text-gray;
               font-size: 1.4rem;
-              span {
-                color: $red;
-                font-style: italic;
-                font-size: 1rem;
-              }
-              input[type=radio]{
-                position:absolute;
-                visibility: hidden;
-                z-index: 15;
-              }
-              input[type=radio]:checked ~ .check::before{
-                background: $purple;
-              }
-              input[type=radio]:checked ~ label{
-                color: $purple;
-              }
-              label{
-                display: inline-block;
-                font-size: 1.2rem;
-                vertical-align: top;
-                cursor: pointer;
-                transition: all 0.25s ease-in;
-              }
-              div.check{
-                display: inline-block;
-                //position: absolute;
-                border: 1px solid $text-gray;
-                border-radius: 100%;
-                height: 10px;
-                width: 10px;
-                top: 0px;
-                left: 0px;
-                z-index: 10;
-                transition: border .25s linear;
-              }
-              div.check::before {
-                display: block;
-                position: absolute;
-                content: '';
-                border-radius: 100%;
-                height: 6px;
-                width: 6px;
-                top: 1px;
-                left: 1px;
-                transition: background 0.25s ease-in;
-              }
             }
-          }
-        }
-        div.button-wrapper {
-          margin-top: 20px;
-          label {
-            width: 100%;
-            color: $purple;
-            font-size: 2.4rem;
-            display: block;
-            span {
-              color: $text-gray;
-              font-size: 1.2rem;
-              display: inline-block;
-              position: absolute;
-              bottom: 0;
-              right: 0;
+            a {
+              color: $purple;
+              padding-top: 8px;
             }
-          }
-          button {
-            width: 100%;
-            border: 0;
-            background: $purple;
-            color: white;
-            font-weight: bold;
-            font-size: 1.4rem;
-            padding: 1.2rem 0;
-            margin-top: 2.2rem;
           }
         }
       }
-      a {
+
+      div.mobile-info {
+        display: none;
+        width: 100%;
+        padding: 36px 20px;
+        @media (max-width: $mobile) {
+          display: block;
+        }
+        p {
+          width: 86%;
+          font-size: 1.4rem;
+          line-height: 1.6;
+          padding: 25px 0;
+          margin: auto;
+          a {
+            color: $purple;
+            font-size: 1.4rem;
+            line-height: 1.6;
+            text-decoration: none;
+            display: inline;
+          }
+        }
+      }
+      aside.img {
+        width: 16.7%;
+        //min-width: 103px;
+        margin: 0 9% 0 10%;
+        height: 53.2rem;
+        background-image: url("../img/product-bg.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        @media (max-width: $desk-br) {
+          vertical-align: middle;
+          margin: 0 7% 0 8%;
+        }
+        @media (max-width: $break) {
+          height: 40rem;
+          margin: 0 5% 0 6%;
+        }
+        @media (max-width: $tablet) {
+          width: 30%;
+          height: 55rem;
+        }
+        @media (max-width: $mobile) {
+          width: 80px;
+          height: 248px;
+          margin: auto;
+        }
+      }
+
+      aside.buy {
+        width:32.5%;
+        min-width: 300px;
+        margin: 3.6vw auto;
+        text-align: left;
+        border: 2px solid $bg-gray;
+        @media (max-width: $desk-br) {
+          vertical-align: middle;
+        }
+        @media (max-width: $tablet) {
+          width:100%;
+          border: none;
+        }
+        @media (max-width: $mobile) {
+          margin: 22px auto;
+        }
+        form {
+          padding: 3rem 3.5rem;
+          @media (max-width: $desk-br) {
+            padding: 3rem;
+          }
+          @media (max-width: $tablet) {
+            padding: 3rem 0 0 0;
+          }
+          @media (max-width: $mobile-br) {
+            padding-top: 0;
+          }
+          @media (max-width: $mobile) {
+            //padding: 0;
+          }
+          h5 {
+            text-align: left;
+            padding-bottom: 0.8rem;
+            @media (max-width: $tablet) {
+              display: none;
+            }
+          }
+          div.dropdown-wrapper {
+            background-color: $bg-gray;
+            width: 100%;
+            height: 4.2rem;
+            margin: 1.2rem 0;
+            @media (max-width: $tablet) {
+              height: 5rem;
+            }
+            @media (max-width: $mobile) {
+              width: 83%;
+              height: 46px;
+              margin: 10px auto;
+            }
+            select:focus {
+              outline: none;
+              box-shadow: none !important;
+            }
+            select {
+              display: block;
+              border: 0;
+              background: $bg-gray;
+              height: 100%;
+              width: 70%;
+              color: $purple;
+              font-weight: bold;
+              float: right;
+              @media (max-width: $tablet) {
+                width: 62%;
+              }
+              @media (max-width: $mobile) {
+                font-size: 1.6rem;
+                width: 76%;
+              }
+              &.top {
+                width: 63%;
+                @media (max-width: $tablet) {
+                  width: 59%;
+                }
+                @media (max-width: $mobile) {
+                  width: 69%;
+                }
+              }
+            }
+          }
+          div.radio-wrapper {
+            @media (max-width: $mobile) {
+              padding-top: 3px;
+            }
+            p {
+              font-family: "CircularBold";
+              color: $purple;
+              font-size: 1.4rem;
+              padding: 0.4rem 0;
+              text-align: left;
+              @media (max-width: $tablet) {
+                display: none;
+              }
+            }
+            ul {
+              @media (max-width: $tablet) {
+                padding-top: 1.5rem;
+              }
+              @media (max-width: $mobile) {
+                padding: 8px 0px;
+                width: 86%;
+                margin: auto;
+                text-align: center;
+              }
+              li {
+                padding: 0.5rem 0;
+                color: $text-gray;
+                font-size: 1.4rem;
+
+                @media (max-width: $tablet) {
+                  display: inline-block;
+                  width: 49.5%;
+                }
+                @media (max-width: $mobile) {
+                  display: inline-block;
+                  width: 44%;
+                  margin-left: 0px;
+                  padding: 0;
+                  text-align: left;
+                }
+
+                label{
+                  display: inline-block;
+                  font-size: 1.2rem;
+                  vertical-align: top;
+                  cursor: pointer;
+                  transition: all 0.25s ease-in;
+                  @media (max-width: $tablet) {
+                    font-size: 1.4rem;
+                    padding: 0 0.5rem ;
+                    line-height: 1.2;
+                  }
+                  @media (max-width: $mobile) {
+                    left: 18px;
+                    display: inline-block;
+                    font-size: 1.3rem;
+                    padding: 2px 0 2px 6px;
+                  }
+                  span.red-text {
+                    color: $red;
+                    font-style: italic;
+                    font-size: 1rem;
+                  }
+                  span.mobile {
+                    display: none;
+                    @media (max-width: $tablet) {
+                      display: inline;
+                    }
+                  }
+                  span.gray-text {
+                    color: $text-gray;
+                  }
+                  span.hide {
+                    display: inline;
+                    @media (max-width: $tablet) {
+                      display: none;
+                    }
+                  }
+                }
+                input[type=radio]{
+                  position:absolute;
+                  visibility: hidden;
+                  z-index: 10;
+                  top: 0px;
+                  left: 0px;
+                }
+                input[type=radio]:checked ~ .check::before{
+                  background: $purple;
+                }
+                input[type=radio]:checked ~ label{
+                  color: $purple;
+                }
+                div.check{
+                  display: inline-block;
+
+                  border: 1px solid $text-gray;
+                  border-radius: 100%;
+                  height: 10px;
+                  width: 10px;
+                  top: 0px;
+                  left: 0px;
+                  z-index: 8;
+                  transition: border .25s linear;
+                  @media (max-width: $tablet) {
+                    top: 2px;
+                  }
+                  @media (max-width: $mobile) {
+                    position: absolute;
+                    top: 2px;
+                    height: 16px;
+                    width: 16px;
+                  }
+                }
+                div.check::before {
+                  display: block;
+                  position: absolute;
+                  content: '';
+                  border-radius: 100%;
+                  height: 6px;
+                  width: 6px;
+                  top: 1px;
+                  left: 1px;
+                  transition: background 0.25s ease-in;
+                  @media (max-width: $mobile) {
+                    position: absolute;
+                    height: 10px;
+                    width: 10px;
+                    top: 2px;
+                    left: 2px;
+                  }
+                }
+
+              }
+              li:last-child {
+                @media (max-width: $mobile) {
+                  margin-left: 28px;
+                }
+              }
+            }
+          }
+          div.button-wrapper {
+            padding: 2rem 0 4rem 0;
+            @media (max-width: $mobile) {
+              padding: 22px 0 0 0;
+            }
+            div.price {
+              width: 100%;
+              color: $purple;
+              font-size: 2.4rem;
+              display: block;
+              @media (max-width: $tablet) {
+                display: none;
+              }
+              span {
+                color: $text-gray;
+                font-size: 1.2rem;
+                display: inline-block;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+              }
+            }
+            button {
+              width: 100%;
+              border: 0;
+              background: $purple;
+              color: white;
+              font-weight: bold;
+              font-size: 1.4rem;
+              padding: 1.2rem 0;
+              margin-top: 2.2rem;
+              @media (max-width: $tablet) {
+                margin-top: 1rem;
+                padding: 1.6rem 0 1.8rem 0;
+              }
+              @media (max-width: $mobile) {
+                margin:0;
+                font-size: 1.6rem;
+                height: 60px;
+                text-align: right;
+                padding-right: 34px;
+              }
+            }
+          }
+        }
         div.buy-fgroup {
-          background: $light-purple;
-          color: $purple;
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          background-color: $bg-gray;
           text-align: center;
-          font-size: 1.3rem;
           padding: 1.4rem 0;
           transition: all 250ms;
           -webkit-transition: all 250ms;
+          @media (max-width: $tablet) {
+            display: none;
+          }
+          a{
+            color: $purple;
+            font-size: 1.3rem;
+          }
+
         }
-        &:hover {
-          .buy-fgroup {
+        div.buy-fgroup:hover {
+          background-color: $purple;
+          a {
             color: white;
-            background: $purple;
           }
         }
       }
@@ -244,14 +462,40 @@ main.product {
 
   section.gray-banner {
     background-color: $bg-gray;
+    @media (max-width: $mobile) {
+      background-color: white;
+    }
     article {
-      padding: 4vw 0;
+      padding: 5.8rem 0;
       width: 74%;
       max-width: 1065px;
+      @media (max-width: $mobile-br) {
+        width: 90%;
+        border-top: 1px solid $text-gray;
+      }
+      @media (max-width: $mobile) {
+        width: 95%;
+        padding: 55px 0;
+      }
+      div {
+        @media (max-width: $mobile) {
+          width: 80px;
+          height: 68px;
+        }
+      }
       li {
         width: 32%;
+        @media (max-width: $mobile-br) {
+          width: 90%;
+        }
         p {
          color: $text-gray;
+         @media (max-width: $mobile-br) {
+           width: 100%;
+           padding-top: 15px;
+           font-size: 1.4rem;
+           line-height: 1.6;
+          }
         }
       }
     }
@@ -262,25 +506,33 @@ main.product {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    padding: 9.6vw 0;
-
+    padding: 140px 0;
+    @media (max-width: $mobile) {
+      padding: 158px 0 126px 0;
+    }
     div.calculator-wrapper {
-      //top: 50%;
-      //transform: translateY(-50%);
       padding: 43px 0px 53px 0;
       max-width: 442px;
       margin: 0 auto;
       background-color: white;
-      @media (max-width: $mobile) {
+      @media (max-width: $mobile-br) {
         padding: 50px 5%;
-        max-width: 95%;
+        max-width: 90%;
+      }
+      @media (max-width: $mobile) {
+        padding: 55px 5%;
       }
       hgroup {
         max-width: 300px;
         margin: 0 auto;
+        text-align: center;
+
         p {
           margin: 10px auto 5px auto;
           font-size: 14px;
+          @media (max-width: $mobile) {
+            margin: 5px auto;
+          }
         }
         input[type="text"] {
           border: 0;
@@ -290,6 +542,11 @@ main.product {
           width: 100%;
           text-align: center;
           padding: 8px;
+          opacity: 0.7;
+          @media(max-width: $mobile-br) {
+            width: 74%;
+            margin: auto;
+          }
           &::-webkit-input-placeholder {
             color: $purple;
           }
