@@ -20,13 +20,40 @@ main.why, main.faq {
       width: 48%;
       padding: 30px 0;
       margin: auto;
+      @media (max-width: $break) {
+        width: 55%;
+      }
+      @media (max-width: $tablet) {
+        width: 60%;
+      }
+      @media (max-width: $mobile) {
+        width: 70%;
+        padding: 20px 0;
+      }
       h5 {
         font-size: 3rem;
         line-height: 1.35;
+        @media (max-width: $mobile) {
+            font-size: 1.8rem;
+        }
       }
       p {
         width: 100%;
         padding: 20px 0;
+        span {
+          @media (max-width: $desk-br) {
+            font-size: 1.6rem;
+          }
+          @media (max-width: $break) {
+            font-size: 1.4rem;
+          }
+          @media (max-width: $tablet) {
+            font-size: 1.2rem;
+          }
+          @media (max-width: $mobile) {
+            font-size: 0.8rem;
+          }
+        }
       }
     }
   }
