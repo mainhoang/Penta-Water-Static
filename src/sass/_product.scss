@@ -418,16 +418,23 @@ main.product {
               font-size: 1.4rem;
               padding: 1.2rem 0;
               margin-top: 2.2rem;
+              div.mobile-price {
+                display: none;
+                font-weight: normal;
+                @media (max-width: $tablet) {
+                  display: inline-block;
+                  float: left;
+                }
+              }
               @media (max-width: $tablet) {
                 margin-top: 1rem;
-                padding: 1.6rem 0 1.8rem 0;
+                padding: 1.6rem 32px 1.8rem 32px;
+                text-align: right;
               }
               @media (max-width: $mobile) {
                 margin:0;
                 font-size: 1.6rem;
                 height: 60px;
-                text-align: right;
-                padding-right: 34px;
               }
             }
           }
