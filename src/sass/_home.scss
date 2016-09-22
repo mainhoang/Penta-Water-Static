@@ -1,5 +1,5 @@
 main.home {
-  section.home-purified .content,  section.naturally-balanced .content, section.delivered .content {
+  section.home-purified .content,  section.naturally-balanced .content {
     @media (max-width: $break) {
       width: 72%;
       min-width: 275px;
@@ -7,8 +7,10 @@ main.home {
       padding-bottom: 75px;
     }
     @media (max-width: $mobile) {
-      width: 80%;
-      min-width: 275px;
+      width: 90%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      //min-width: 320px;
     }
   }
   section.thing {
@@ -102,8 +104,7 @@ main.home {
           max-width: 600px;
         }
         @media (max-width: $mobile) {
-          padding-left: 5%;
-          padding-right: 5%;
+          width: 80%;
         }
       }
       div.gray-box {
@@ -181,6 +182,12 @@ main.home {
     background-position: center;
     article {
       padding: 145px 0;
+      @media (max-width: $break) {
+        width: 72%;
+        min-width: 275px;
+        padding-top: 75px;
+        padding-bottom: 75px;
+      }
       div.purple-box {
         background: $purple;
         width: 100%;
@@ -283,6 +290,9 @@ main.home {
         }
         @media (max-width: $break) {
           padding-bottom: 20px;
+        }
+        @media (max-width: $mobile) {
+          font-size: 2.5rem;
         }
       }
       ul {

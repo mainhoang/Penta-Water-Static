@@ -1,4 +1,35 @@
 main.why, main.faq {
+  section.faq-content p, section.first-3-articles p:nth-child(2) {
+    width: 82%;
+    max-width: 750px;
+    font-size: 1.8rem;
+    margin: auto;
+    line-height: 1.75;
+    @media (max-width: $break) {
+      width: 100%;
+    }
+    @media (max-width: $mobile) {
+      font-size: 1.4rem;
+      line-height: 1.6;
+    }
+  }
+
+  section.faq-content {
+    padding: 30px 0;
+    article {
+      width: 48%;
+      padding: 30px 0;
+      margin: auto;
+      h5 {
+        font-size: 3rem;
+        line-height: 1.35;
+      }
+      p {
+        width: 100%;
+        padding: 20px 0;
+      }
+    }
+  }
 
   section.hero {
     div.hero-image {
@@ -24,7 +55,7 @@ main.why, main.faq {
             letter-spacing: -4px;
           }
           @media (max-width:$mobile) {
-            font-size: 8rem;
+            font-size: 6rem;
             letter-spacing: -3px;
           }
         }
@@ -37,9 +68,17 @@ main.why, main.faq {
     article {
       padding-top: 62px;
       padding-bottom: 30px;
+      @media (max-width: $mobile) {
+        padding: 50px 0;
+        width: 80%;
+      }
       hr {
         width: 74%;
         margin: 40px auto 65px auto;
+        @media (max-width: $mobile) {
+          width: 90%;
+          margin: 50px auto;
+        }
       }
       p {
         width: 80%;
@@ -49,7 +88,11 @@ main.why, main.faq {
         line-height: 1.8;
         padding: 30px 0;
         @media (max-width: $break) {
-          width: 100%;
+          width: 90%;
+        }
+        @media (max-width: $mobile) {
+          font-size: 1.4rem;
+          line-height: 1.6;
         }
       }
       p:nth-child(2) {
@@ -61,6 +104,10 @@ main.why, main.faq {
         @media (max-width: $break) {
           width: 100%;
         }
+        @media (max-width: $mobile) {
+          font-size: 1.4rem;
+          line-height: 1.6;
+        }
       }
       div.why-purified-fgroup {
         width: 78%;
@@ -71,6 +118,12 @@ main.why, main.faq {
         text-align: center;
         line-height: 2;
         padding-bottom: 36px;
+        @media (max-width: $mobile) {
+          width: 90%;
+          font-size: 1rem;
+          line-height: 1.5;
+          padding-bottom: 30px;
+        }
         span {
           color: $purple;
         }
@@ -81,8 +134,16 @@ main.why, main.faq {
   section.continued article {
     padding-top: 46px;
     padding-bottom: 109px;
+    @media (max-width: $mobile) {
+      padding: 50px 0;
+      width: 80%;
+    }
     hr {
       margin: 54px auto 80px auto;
+      @media (max-width: $mobile) {
+        width: 90%;
+        margin: 50px auto;
+      }
     }
     p {
       font-size: 1.5rem;
@@ -91,6 +152,10 @@ main.why, main.faq {
       padding-bottom: 30px;
       @media (max-width: $break) {
         width: 100%;
+      }
+      @media (max-width: $mobile) {
+        font-size: 1.4rem;
+        line-height: 1.6;
       }
     }
     h3 span {
@@ -161,6 +226,10 @@ main.why, main.faq {
       article {
         padding: 12.4vw 0 9.4vw 0;
         height: 100%;
+        @media (max-width: $mobile) {
+          padding: 100px 0;
+          width: 80%;
+        }
         h3 {
           color: white;
         }
@@ -173,6 +242,10 @@ main.why, main.faq {
           margin: auto;
           color: white;
           @media (max-width: $break) {
+            width: 100%;
+          }
+          @media (max-width: $mobile) {
+            line-height: 1.6;
             width: 100%;
           }
         }
