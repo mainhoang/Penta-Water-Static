@@ -1,27 +1,73 @@
-.distributors {
-  background: #F3F3F3;
-  .stores-container {
-    max-width: 1220px;
-    margin: 0 auto;
+section.stores {
+
+  div {
+    font-size: 1.13rem;
+    color: $text-gray;
     text-align: center;
-    .store {
-      display: inline-block;
-      padding: 5px 0;
-      // position: relative;
-      // top: 50%;
-      // transform: translateY(-50%);
-      // width: 13.7%;
-      img {
-        width: 75%;
+    padding-bottom: 15px;
+  }
+
+  article {
+    background: $bg-gray;
+    width: 100%;
+    max-width: 100%;
+
+    ul {
+      width: 100%;
+      height: 106px;
+      margin: 0 auto;
+      text-align: center;
+      @media (max-width: $big-break) {
+        height: 80px;
+      }
+      @media (max-width: $break) {
+        height: 60px;
+      }
+      li {
+        margin: 15px auto;
+        display: inline-block;
+        width: 13%;
+        height: 70%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        vertical-align: middle;
+        opacity: 0.2;
+        @media (max-width: $big-break) {
+          margin: 12px auto;
+        }
+        @media (max-width: $break) {
+          margin: 10px auto;
+        }
+        &:nth-child(1) {
+          background-image: url("../img/stores/whole-foods.svg");
+          background-size: 45%;
+        }
+        &:nth-child(2) {
+          background-image: url("../img/stores/bristol-farms.svg");
+          background-size: 85%;
+        }
+        &:nth-child(3) {
+          background-image: url("../img/stores/sprouts-logo.svg");
+          background-size: 60%;
+        }
+        &:nth-child(4) {
+          background-image: url("../img/stores/vons.svg");
+          background-size: 45%;
+        }
+        &:nth-child(5) {
+          background-image: url("../img/stores/pavilions.svg");
+          background-size: 80%;
+        }
+        &:nth-child(6) {
+          background-image: url("../img/stores/earthbar.svg");
+          background-size: 60%;
+        }
+        &:nth-child(7) {
+          background-image: url("../img/stores/thevitaminshoppe.svg");
+          background-size: 85%;
+        }
       }
     }
   }
-}
-
-.proudly-sold-in {
-  color: #f3f3f3;
-  text-align: center;
-  font-family: $circularbook;
-  padding-top: 60px;
-  padding-bottom: 20px;
 }

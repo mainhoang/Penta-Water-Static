@@ -72,13 +72,18 @@
     visibility: hidden;
 }
 
-.slick-slide
-{
-    display: none;
-    float: left;
+.slick-slide {
+  display: none;
+  float: left;
 
-    height: 100%;
-    min-height: 1px;
+  height: 55vw;
+  min-height: 1px;
+
+}
+@media (max-width: 768px) {
+  .slick-slide {
+    height: 485px;
+  }
 }
 [dir='rtl'] .slick-slide
 {

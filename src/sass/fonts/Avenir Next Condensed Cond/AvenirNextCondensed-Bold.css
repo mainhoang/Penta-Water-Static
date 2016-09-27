@@ -1,0 +1,12 @@
+/* Webfont: AvenirNextCondensed-Bold */@font-face {
+    font-family: 'AvenirNextCondensedCond';
+    src: url('AvenirNextCondensed-Bold.eot'); /* IE9 Compat Modes */
+    src: url('AvenirNextCondensed-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('AvenirNextCondensed-Bold.woff') format('woff'), /* Modern Browsers */
+         url('AvenirNextCondensed-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('AvenirNextCondensed-Bold.svg#AvenirNextCondensed-Bold') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+}
+

@@ -1,0 +1,95 @@
+section.clouds {
+  background-image: url('../img/clouds.jpg');
+  background-size: cover;
+  background-position: center;
+  article {
+    width: 100%;
+    max-width: 1440px;
+    @media (max-width: $tablet) {
+      width: 85%;
+    }
+    h6, p {
+      color: white;
+    }
+  }
+}
+ul.banner {
+  height: 100%;
+  text-align: center;
+  div.banner-icons {
+    height: 56px;
+    width: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin: 0 auto;
+    &#patented-process {
+      background-image: url('../img/patented-process-icon.svg');
+      width: 56px;
+    }
+    &#natural-ph {
+      background-image: url('../img/natural-ph-icon.svg');
+    }
+    &#no-additives {
+      background-image: url('../img/no-additives-icon.svg');
+    }
+    &#patented-process-purple {
+      background-image: url('../img/purp-patent-process.svg');
+    }
+    &#natural-ph-purple {
+      background-image: url('../img/purp-natural-ph.svg');
+    }
+    &#no-additives-purple {
+      background-image: url('../img/purp-no-additives.svg');
+    }
+    &#micron-filtration {
+      background-image: url('../img/micron.png');
+    }
+    &#reverse-osmosis {
+      background-image: url('../img/reverse.png');
+    }
+
+    &#deionization {
+      background-image: url('../img/deionization.png');
+      width: 70px;
+    }
+
+    &#ultraviolet-light {
+      background-image: url('../img/ultraviolet.png');
+    }
+
+    &#ozonation {
+      background-image: url('../img/ozonation.png');
+      width: 40px;
+    }
+  }
+  li {
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    @media (max-width: $mobile-br) {
+      width: 70%;
+      padding-bottom: 40px;
+    }
+    h6 {
+      padding-top: 16px;
+    }
+    p {
+      width: 80%;
+      padding-top: 10px;
+      margin: 0 auto;
+      color: white;
+      font-size: 1.3rem;
+      line-height: 1.5em;
+      @media (max-width: $tablet) {
+        width: 70%;
+      }
+    }
+  }
+  li:last-child {
+    @media (max-width: $mobile-br) {
+      width: 70%;
+      padding-bottom: 0;
+    }
+  }
+}

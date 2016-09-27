@@ -1,0 +1,106 @@
+.blog-index {
+
+  .posts-container {
+    margin-top: 100px;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: $circularbook;
+    color: $text-gray;
+    padding-bottom: 80px;
+    margin-top: 80px;
+
+    .column {
+      width: 24%;
+      display: inline-block;
+      padding-left: 5px;
+      padding-right: 5px;
+      vertical-align: top;
+
+      @media (max-width: $mobile) {
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+      }
+
+      .post {
+        margin-bottom: 20px;
+
+        .image {
+
+          img {
+            width: 100%;
+          }
+        }
+        .title {
+          color: $purple;
+          font-size: 14px;
+          font-weight: bold;
+          padding: 10px 0;
+        }
+        .date {
+          color: $text-gray;
+          font-size: 12px;
+        }
+        .read-more {
+          padding-top: 5px;
+          a {
+            color: $purple;
+            text-decoration: underline;
+            padding: 0;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+
+  .load-more {
+    text-align: center;
+    a {
+      color: $text-gray;
+      text-decoration: underline;
+    }
+  }
+
+  .sub-menu {
+    background: #F8F8F8;
+    position: relative;
+  }
+
+  .sub-menu-container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+
+
+
+    .sub-menu-link {
+      display: inline-block;
+      padding: 20px 0;
+      width: 130px;
+      border-bottom: 3px solid #f8f8f8;
+      transition: all 250ms;
+      -webkit-transition: all 250ms;
+      color: $text-gray;
+
+      &:hover {
+        border-bottom: 3px solid $purple;
+        color: $purple;
+      }
+
+    }
+
+    a {
+      color: $purple;
+      font-family: $circularbook;
+      font-weight: bold;
+      padding: 0;
+
+      @media (max-width: $mobile) {
+        width: 100%;
+        display: inline-block;
+      }
+    }
+  }
+
+}

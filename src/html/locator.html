@@ -8,158 +8,147 @@
   <link rel="stylesheet" type="text/css" href="js/slick/slick-theme.css"/>
 </head>
 <body>
-  <div class="content-wrapper locator">
+  <main class="locator">
+
     {% include 'header' %}
-    <div class="hero-image">
-      <div class="find-container">
-        <div class="find">
-          <div class="text">
-            find a store near you
-          </div>
 
-          <div class="zip-code">
+    <section class="row hero">
+      <div class="hero-image">
+        <hgroup class="shadow">
+          <h5>find a store near you</h5>
+          <div class="input-wrapper">
             <input type="text" placeholder="enter your zip code" />
+            <button class="arrow-blk"></button>
           </div>
-        </div>
+        </hgroup>
       </div>
-    </div>
+    </section>
 
-    <div class="results">
-      12 locations near "90232"
-    </div>
-
-    <div class="locations">
-      <div class="location">
-        <div class="store-name">ralphs</div>
-        <div class="address">
-          5660 Sepulveda Blvd.<br>
-          Culver City CA<br>
-          90230
-        </div>
-        <div class="distance">1.2 mi away</div>
+    <section>
+      <div class="results">
+        12 locations near "90232"
+        <button class="clear-results close"></button>
       </div>
+      <ul class="locations">
+        <li class="location">
+          <h6 class="store-name">pavilion #43</h6>
+          <p class="address">
+            5660 Sepulveda Blvd.<br>
+            Culver City CA<br>
+            90230
+          </p>
+          <a href="#" class="distance">1.2 mi away</a>
+        </li>
+        <li class="location">
+          <h6 class="store-name">whole foods</h6>
+          <p class="address">
+            1389 Jefferson Blvd<br>
+            Culver City CA<br>
+            90230
+          </p>
+          <a href="#" class="distance">1.2 mi away</a>
+        </li>
+        <li class="location">
+          <h6 class="store-name">ralphs</h6>
+          <p class="address">
+            5660 Sepulveda Blvd<br>
+            Culver City CA<br>
+            90230
+          </p>
+          <a href="#" class="distance">1.2 mi away</a>
+        </li>
+        <li class="location">
+          <h6 class="store-name">pavilion #43</h6>
+          <p class="address">
+            5660 Sepulveda Blvd<br>
+            Culver City CA<br>
+            90230
+          </p>
+          <a href="#" class="distance">1.2 mi away</a>
+        </li>
+        <li class="location">
+          <h6 class="store-name">pavilion #43</h6>
+          <p class="address">
+            5660 Sepulveda Blvd<br>
+            Culver City CA<br>
+            90230
+          </p>
+          <a href="#" class="distance">1.2 mi away</a>
+        </li>
+        <li class="location">
+          <h6 class="store-name">whole foods</h6>
+          <p class="address">
+            1389 Jefferson Blvd<br>
+            Culver City CA<br>
+            90230
+          </p>
+          <a href="#" class="distance">1.2 mi away</a>
+        </li>
+        <li class="location">
+          <h6 class="store-name">ralphs</h6>
+          <p class="address">
+            5660 Sepulveda Blvd<br>
+            Culver City CA<br>
+            90230
+          </p>
+          <a href="#" class="distance">1.2 mi away</a>
+        </li>
+        <li class="location">
+          <h6 class="store-name">pavilion #43</h6>
+          <p class="address">
+            5660 Sepulveda Blvd<br>
+            Culver City CA<br>
+            90230
+          </p>
+          <a href="#" class="distance">1.2 mi away</a>
+        </li>
+        <li class="location">
+          <h6 class="store-name">pavilion #43</h6>
+          <p class="address">
+            5660 Sepulveda Blvd<br>
+            Culver City CA<br>
+            90230
+          </p>
+          <a href="#" class="distance">1.2 mi away</a>
+        </li>
+        <li class="location">
+          <h6 class="store-name">whole foods</h6>
+          <p class="address">
+            1389 Jefferson Blvd<br>
+            Culver City CA<br>
+            90230
+          </p>
+          <a href="#" class="distance">1.2 mi away</a>
+        </li>
+        <li class="location">
+          <h6 class="store-name">ralphs</h6>
+          <p class="address">
+            5660 Sepulveda Blvd<br>
+            Culver City CA<br>
+            90230
+          </p>
+          <a href="#" class="distance">1.2 mi away</a>
+        </li>
+        <li class="location">
+          <h6 class="store-name">pavilion #43</h6>
+          <p class="address">
+            5660 Sepulveda Blvd<br>
+            Culver City CA<br>
+            90230
+          </p>
+          <a href="#" class="distance">1.2 mi away</a>
+        </li>
+      </ul>
+    </section>
 
-      <div class="location">
-        <div class="store-name">ralphs</div>
-        <div class="address">
-          5660 Sepulveda Blvd.<br>
-          Culver City CA<br>
-          90230
-        </div>
-        <div class="distance">1.2 mi away</div>
-      </div>
-
-      <div class="location">
-        <div class="store-name">ralphs</div>
-        <div class="address">
-          5660 Sepulveda Blvd.<br>
-          Culver City CA<br>
-          90230
-        </div>
-        <div class="distance">1.2 mi away</div>
-      </div>
-
-      <div class="location">
-        <div class="store-name">ralphs</div>
-        <div class="address">
-          5660 Sepulveda Blvd.<br>
-          Culver City CA<br>
-          90230
-        </div>
-        <div class="distance">1.2 mi away</div>
-      </div>
-
-      <div class="location">
-        <div class="store-name">ralphs</div>
-        <div class="address">
-          5660 Sepulveda Blvd.<br>
-          Culver City CA<br>
-          90230
-        </div>
-        <div class="distance">1.2 mi away</div>
-      </div>
-
-      <div class="location">
-        <div class="store-name">ralphs</div>
-        <div class="address">
-          5660 Sepulveda Blvd.<br>
-          Culver City CA<br>
-          90230
-        </div>
-        <div class="distance">1.2 mi away</div>
-      </div>
-
-      <div class="location">
-        <div class="store-name">ralphs</div>
-        <div class="address">
-          5660 Sepulveda Blvd.<br>
-          Culver City CA<br>
-          90230
-        </div>
-        <div class="distance">1.2 mi away</div>
-      </div>
-
-      <div class="location">
-        <div class="store-name">ralphs</div>
-        <div class="address">
-          5660 Sepulveda Blvd.<br>
-          Culver City CA<br>
-          90230
-        </div>
-        <div class="distance">1.2 mi away</div>
-      </div>
-
-      <div class="location">
-        <div class="store-name">ralphs</div>
-        <div class="address">
-          5660 Sepulveda Blvd.<br>
-          Culver City CA<br>
-          90230
-        </div>
-        <div class="distance">1.2 mi away</div>
-      </div>
-
-      <div class="location">
-        <div class="store-name">ralphs</div>
-        <div class="address">
-          5660 Sepulveda Blvd.<br>
-          Culver City CA<br>
-          90230
-        </div>
-        <div class="distance">1.2 mi away</div>
-      </div>
-
-      <div class="location">
-        <div class="store-name">ralphs</div>
-        <div class="address">
-          5660 Sepulveda Blvd.<br>
-          Culver City CA<br>
-          90230
-        </div>
-        <div class="distance">1.2 mi away</div>
-      </div>
-
-      <div class="location">
-        <div class="store-name">ralphs</div>
-        <div class="address">
-          5660 Sepulveda Blvd.<br>
-          Culver City CA<br>
-          90230
-        </div>
-        <div class="distance">1.2 mi away</div>
-      </div>
-    </div>
-
-
-
-  
-    {% include 'stores' %}  
+    {% include 'stores' %}
     {% include 'footer' %}
-  </div>
+  </main>
 
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script type="text/javascript" src="js/slick/slick.min.js"></script>
+  <script type="text/javascript" src="js/readmore.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

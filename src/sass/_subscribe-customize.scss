@@ -1,0 +1,183 @@
+.subscribe-customize {
+
+  .checkout-progress {
+    text-align: center;
+    padding: 20px 0;
+    background: white;
+    font-family: $circularbook;
+    color: $text-gray;
+
+    @media (max-width: $mobile) {
+      margin-top: 30px;
+    }
+    li {
+      display: inline-block;
+      padding: 0 50px;
+
+      &.selected {
+        color: $purple;
+      }
+
+      @media (max-width: $mobile) {
+        line-height: 1.5em;
+        width: 100%;
+      }
+    }
+  }
+
+  .bottles-background {
+    background-image: url('../img/pink-bg.png');
+    height: 390px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .order {
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-family: $circularbook;
+    padding-top: 30px;
+
+    .purple {
+      font-weight: bold;
+      color: $purple;
+      text-decoration: underline;
+    }
+  }
+
+  .subscription-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    bottom: 280px;
+  }
+
+  .bottle-size {
+    width: 24.5%;
+    text-align: center;
+    display: inline-block;
+
+    img {
+      width: 100%;
+
+      &#small {
+        width: 20%;
+      }
+
+      &#medium {
+        width: 25%;
+      }
+
+      &#large {
+        width: 35%;
+      }
+    }
+  }
+
+  .product-info {
+    width: 24.5%;
+    display: inline-block;
+    text-align: center;
+    font-family: $circularbook;
+
+    .size {
+      padding: 10px 0;
+      color: $purple;
+      font-size: 20px;
+    }
+
+    .info {
+      color: $text-gray;
+      font-size: 12px;
+      padding: 0 40px;
+      line-height: 1.5em;
+    }
+
+    .bottles {
+      padding: 10px 0;
+    }
+
+    .add-button {
+      width: 150px;
+      margin: 0 auto;
+
+      a {
+        color: $purple;
+        background: $light-purple;
+        transition: all 250ms;
+        -webkit-transition: all 250ms;
+        display: block;
+        width: 100%;
+        font-size: 12px;
+        font-weight: bold;
+
+        &:hover {
+          color: $light-purple;
+          background: $purple;
+        }
+      }
+    }
+
+    .ship-info {
+      font-size: 12px;
+      color: $purple;
+      padding: 20px 0;
+    }
+  }
+
+  .next-button {
+    width: 150px;
+    margin: 50px auto 0;
+    text-align: center;
+
+    a {
+      width: 100%;
+      color: $purple;
+      background: $light-purple;
+      display: block;
+      transition: all 250ms;
+      -webkit-transition: all 250ms;
+
+      &:hover {
+        color: $light-purple;
+        background: $purple;
+      }
+    }
+  }
+}
+
+.caret {
+  position: relative;
+  display: none;
+
+}
+
+li.selected .caret {
+  display: block;
+
+  @media (max-width: $mobile) {
+    display: none;
+  }
+}
+
+.caret:before {
+  content: '';
+  position: absolute;
+  top: 19px;
+  left: 37%;
+  border-top: 15px solid white;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+}
+
+.caret:after {
+  content: '';
+  position: absolute;
+  left: 100px;
+  top: 0;
+  border-top: -85px solid white;
+  border-left: -85px solid transparent;
+  border-right: -85px solid transparent;
+}

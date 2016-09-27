@@ -1,0 +1,75 @@
+main.further-blog-detail {
+  section.post-wrapper {
+    p {
+      font-size: 1.5rem;
+      line-height: 2.5rem;
+      text-align: left;
+      letter-spacing: -0.5px;
+      padding: 18px 0;
+      @media (max-width: $mobile) {
+        text-align: justify;
+      }
+    }
+    article.post-content {
+      max-width: 680px;
+      width: 47.2%;
+      margin: auto;
+      padding: 50px 0 62px 0;
+      border-bottom: 1px solid $text-gray;
+      @media (max-width: $desk-br) {
+        width: 55%;
+      }
+      @media (max-width: $tablet) {
+        width: 65%;
+      }
+      @media (max-width: $mobile) {
+        width: 75%;
+      }
+      hgroup {
+        width: 85%;
+        margin: auto;
+        @media (max-width: $tablet) {
+          width: 100%;
+        }
+        .post-date {
+          font-size: 1.3rem;
+          padding: 14px;
+          text-align: center;
+        }
+      }
+      div.post-image-1 {
+        width: 100%;
+        height: 27.9vw;
+        margin: 14px auto 36px auto;
+        background-image: url("../img/further-1.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        @media (max-width: $mobile-br) {
+          height: 254px;
+        }
+      }
+      div.post-image-2 {
+        width: 100%;
+        height: 28vw;
+        margin: 45px auto 0 auto;
+        background-image: url("../img/leo.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        @media (max-width: $mobile-br) {
+          height: 254px;
+        }
+      }
+    }
+    button.share {
+      display: block;
+      color: $purple;
+      font-family: "CircularBold";
+      font-size: 1.4rem;
+      text-decoration: underline;
+      margin: 58px auto 164px;
+      text-align: center;
+    }
+  }
+}
