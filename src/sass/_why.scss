@@ -1,4 +1,4 @@
-main.why, main.faq {
+main.why, main.faq, main.furthermore {
   section.faq-content p, section.first-3-articles p:nth-child(2) {
     width: 82%;
     max-width: 750px;
@@ -13,7 +13,91 @@ main.why, main.faq {
       line-height: 1.6;
     }
   }
-
+  section.furthermore-articles {
+    ul {
+      width: 70.5%;
+      margin: auto;
+      padding: 50px 0 141px 0;
+      column-count: 4;
+      column-gap: 18px;
+      @media (max-width: $tablet) {
+        column-count: 3;
+        column-gap: 30px;
+        padding: 50px 0 100px 0;
+      }
+      @media (max-width: $mobile-br) {
+        column-count: 2;
+        column-gap: 40px;
+        padding: 50px 0;
+      }
+      li {
+        -webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */
+        page-break-inside: avoid; /* Firefox */
+        break-inside: avoid; /* IE 10+ */
+        div {
+          width: 100%;
+          margin-bottom: 10px;
+          background-position: center;
+          background-size: cover;
+          &.small {
+            height: 16.8vw;
+            @media (max-width: $tablet) {
+              height: 20.8vw;
+            }
+            @media (max-width: $mobile-br) {
+              height: 30vw;
+            }
+          }
+          &.medium {
+            height: 18.7vw;
+            @media (max-width: $tablet) {
+              height: 23.7vw;
+            }
+            @media (max-width: $mobile-br) {
+              height: 35vw;
+            }
+          }
+          &.large {
+            height: 21.4vw;
+            @media (max-width: $tablet) {
+              height: 27.4vw;
+            }
+            @media (max-width: $mobile-br) {
+              height: 40vw;
+            }
+          }
+        }
+        h6 {
+          font-size: 1.5rem;
+          line-height: 1.2;
+          letter-spacing: -0.55px;
+          text-align: left;
+        }
+        p {
+          font-size: 10px;
+          text-transform: uppercase;
+          text-align: left;
+          padding: 8px 0 6px 0;
+        }
+        a {
+          font-size: 1.2rem;
+          color: $purple;
+          text-decoration: underline;
+          padding-bottom: 20px;
+        }
+      }
+    }
+    button.load-more {
+      display: block;
+      text-align: center;
+      margin: auto;
+      color: $text-gray;
+      font-size: 14px;
+      text-decoration: underline;
+      cursor: pointer;
+      margin-bottom: 125px;
+    }
+  }
   section.faq-content {
     padding: 30px 0;
     article {

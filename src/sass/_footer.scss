@@ -247,9 +247,9 @@ footer {
             color: #fff;
           }
         }
-        input:last-child {
-          float: right;
-          opacity: 1;
+        button.enter-email {
+          position: absolute;
+          right: 0;
         }
       }
     }
